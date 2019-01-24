@@ -313,6 +313,7 @@ export const query = graphql`
         tests {
           text
           testString
+          type
         }
       }
       required {
@@ -337,6 +338,14 @@ export const query = graphql`
           tail
         }
         indexjsx {
+          key
+          ext
+          name
+          contents
+          head
+          tail
+        }
+        indexpy {
           key
           ext
           name

@@ -1,0 +1,18 @@
+{
+  "name": "Basic Python",
+  "dashedName": "basic-python",
+  "order": 1,
+  "time": "10 hours",
+  "template": "",
+  "required": [],
+  "superBlock": "python",
+  "superOrder": 8,
+  "challengeOrder": [
+    [
+      "5c378b9e372c1803a882ed1f",
+      "Variables in Python"
+    ]
+  ],
+  "helpRoom": "HelpPython",
+  "fileName": "10-python/basic-python.json"
+}

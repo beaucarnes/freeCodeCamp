@@ -36,7 +36,8 @@ const modeMap = {
   css: 'css',
   html: 'html',
   js: 'javascript',
-  jsx: 'javascript'
+  jsx: 'javascript',
+  py: 'python'
 };
 
 var monacoThemesDefined = false;

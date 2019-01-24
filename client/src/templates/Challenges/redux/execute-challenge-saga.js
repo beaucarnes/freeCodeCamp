@@ -25,7 +25,8 @@ import {
 import {
   buildJSChallenge,
   buildDOMChallenge,
-  buildBackendChallenge
+  buildBackendChallenge,
+  buildPYChallenge
 } from '../utils/build';
 
 import { challengeTypes } from '../../../../utils/challengeTypes';
@@ -40,7 +41,7 @@ import {
 export function* executeChallengeSaga() {
   const consoleProxy = yield channel();
   try {
-    const { js, bonfire, backend } = challengeTypes;
+    const { js, bonfire, backend, py } = challengeTypes;
     const { challengeType } = yield select(challengeMetaSelector);
 
     yield put(initLogs());
@@ -53,6 +54,9 @@ export function* executeChallengeSaga() {
       case js:
       case bonfire:
         testResults = yield executeJSChallengeSaga(proxyLogger);
+        break;
+      case py:
+        testResults = yield ExecutePyChallengeSaga(proxyLogger);
         break;
       case backend:
         testResults = yield executeBackendChallengeSaga(proxyLogger);
@@ -138,10 +142,10 @@ function* executeTests(testRunner) {
   const tests = yield select(challengeTestsSelector);
   const testTimeout = 5000;
   const testResults = [];
-  for (const { text, testString } of tests) {
-    const newTest = { text, testString };
+  for (const { text, testString, type } of tests) {
+    const newTest = { text, testString, type };
     try {
-      const { pass, err } = yield call(testRunner, testString, testTimeout);
+      const { pass, err } = yield call(testRunner, testString, testTimeout, type);
       if (pass) {
         newTest.pass = true;
       } else {
@@ -163,6 +167,30 @@ function* executeTests(testRunner) {
     }
   }
   return testResults;
+}
+
+function* ExecutePyChallengeSaga(proxyLogger) {
+  const files = yield select(challengeFilesSelector);
+  const { build, sources } = yield call(buildPYChallenge, files);
+  const code = sources && 'index' in sources ? sources['index'] : '';
+
+  const testWorker = createWorker('python-evaluator');
+  testWorker.on('LOG', proxyLogger);
+
+  try {
+    return yield call(executeTests, async(testString, testTimeout, type) => {
+      try {
+        return await testWorker.execute(
+          { build, testString, type, code, sources },
+          testTimeout
+        );
+      } finally {
+        testWorker.killWorker();
+      }
+    });
+  } finally {
+    testWorker.remove('LOG', proxyLogger);
+  }
 }
 
 function* updateMainSaga() {

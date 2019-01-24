@@ -83,6 +83,24 @@ export function buildJSChallenge(files) {
     }));
 }
 
+export function buildPYChallenge(files) {
+  const pipeLine = composeFunctions(...transformers);
+  const finalFiles = Object.keys(files)
+    .map(key => files[key])
+    .map(pipeLine);
+  return Promise.all(finalFiles)
+    .then(checkFilesErrors)
+    .then(files => ({
+      build: files
+        .reduce(
+          (body, file) => [...body, file.head, file.contents, file.tail],
+          []
+        )
+        .join('\n'),
+      sources: buildSourceMap(files)
+    }));
+}
+
 export function buildBackendChallenge(formValues) {
   const {
     solution: { value: url }
