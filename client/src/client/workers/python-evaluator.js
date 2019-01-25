@@ -1,8 +1,8 @@
 /* global Sk */
 /* eslint-disable */
 importScripts(
-  'http://www.skulpt.org/static/skulpt.min.js',
-  'http://www.skulpt.org/static/skulpt-stdlib.js'
+  '/js/skulpt.min.js',
+  '/js/skulpt-stdlib.js'
 );
 /* eslint-enable */
 
