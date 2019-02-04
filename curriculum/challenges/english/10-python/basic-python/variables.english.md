@@ -1,5 +1,5 @@
 ---
-id: 5c378b9e372c1803a882ed1f
+id: 5c55e842103ae886fa3ba979
 title: Variables in Python
 challengeType: 9
 guideUrl: 
@@ -26,11 +26,14 @@ tests:
     testString: "output => output.includes('Pay: 96.25')"
     type: console
   - text: "You must prompt the pay and rate using the input() function."
-    testString: code => code.includes('input')
+    testString: input => input.includes('input')
     type: input
   - text: "You must actually calculate the pay. Don't just print 39.25"
-    testString: code => !code.includes('39.25')
+    testString: input => !input.includes('39.25')
     type: input
+  - text: "variable 'yo' must equal 'person'"
+    testString: yo == 'person'
+    type: code
       
 ```
 

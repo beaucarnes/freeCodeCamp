@@ -14,15 +14,17 @@ self.console.log = function proxyConsole(...args) {
 
 self.onmessage = async e => {
   /* eslint-disable no-unused-vars */
-  const { code = '' } = e.data;
+  let { code = '' } = e.data;
   let consoleTestPassed = false;
+  let codeTestPassed = false;
   let {type, testString} = e.data;
 
   /* eslint-disable no-eval */
-  const testResult = eval(testString);
+  const testResult = type !== 'code' ? eval(testString) : x => x;
   /* eslint-enable no-eval */
 
   if (type === 'input') {
+    // Testing the code the user submitted for specific strings
     if (testResult(code)) {
       self.postMessage({ pass: true });
     } else {
@@ -32,7 +34,15 @@ self.onmessage = async e => {
         }
       });
     }
-  } else if (type === 'console') {
+  } else if (type === 'console' || type === 'code') {
+
+    if (type === 'code') {
+      // Adding boolean test to end of Python code.
+      // If this prints 'True', test passes.
+      code = code + '\nprint(' + testString + ')';
+    }
+
+    console.log(code)
 
     Sk.python3 = true;
     Sk.pre = 'output';
@@ -41,7 +51,8 @@ self.onmessage = async e => {
       return Sk.importMainWithBody('<stdin>', false, code, true);
     });
     myPromise.then(function(mod) {
-      if (consoleTestPassed) {
+      if ((type === 'console' && consoleTestPassed) ||
+      (type === 'code' && codeTestPassed)) {
           self.postMessage({ pass: true });
       } else {
         self.postMessage({
@@ -52,7 +63,7 @@ self.onmessage = async e => {
       }
     },
       function(err) {
-        console.log(err);
+        if (type !== 'code') {console.log(err);}
         self.postMessage({
           err: {
             message: err.toString()
@@ -64,11 +75,23 @@ self.onmessage = async e => {
   // Skulpt calls this function with the console output of the Python code
   function outf(output) {
     output = output.replace(/\n$/, '');
-    console.log(output);
 
-    if (testResult(output)) {
-        consoleTestPassed = true;
+    if (type === 'code') {
+      // A test has been added to the end of the code.
+      if (output === 'True') {
+        // Test passes if last line of console output is 'True'
+        codeTestPassed = true;
+      } else {
+        // This prevents false postives
+        codeTestPassed = false;
+      }
+    } else {
+      console.log(output);
+      if (testResult(output)) {
+          consoleTestPassed = true;
+      }
     }
+
   }
 
   function builtinRead(x) {

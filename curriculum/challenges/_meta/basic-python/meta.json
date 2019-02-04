@@ -9,9 +9,58 @@
   "superOrder": 8,
   "challengeOrder": [
     [
-      "5c378b9e372c1803a882ed1f",
-      "Variables in Python"
-    ]
+      "5c4b6e0b24fa62226d69622c",
+      "Comment Your Python Code"
+    ],
+    [
+      "5c55e842103ae886fa3ba966",
+      "Store Values with Python Variables"
+    ],
+    [
+      "5c55e842103ae886fa3ba96b",
+      "Understanding Case Sensitivity in Variables"
+    ],
+    [
+      "cf1111c1c11feddfaeb3bdef",
+      "Add Two Numbers with Python"
+    ],
+    [
+      "cf1111c1c11feddfaeb4bdef",
+      "Subtract One Number from Another with Python"
+    ],
+    [
+      "cf1231c1c11feddfaeb5bdef",
+      "Multiply Two Numbers with Python"
+    ],
+    [
+      "cf1111c1c11feddfaeb6bdef",
+      "Divide One Number by Another with Python"
+    ],
+    [
+      "56533eb9ac21ba0edf2244ac",
+      "Increment a Number with Python"
+    ],
+    [
+      "56533eb9ac21ba0edf2244ad",
+      "Decrement a Number with Python"
+    ],
+    [
+      "cf1391c1c11feddfaeb4bdef",
+      "Create Decimal Numbers with Python"
+    ],
+    [
+      "bd7993c9c69feddfaeb7bdef",
+      "Multiply Two Decimals with Python"
+    ],
+    [
+      "bd7993c9ca9feddfaeb7bdef",
+      "Divide One Decimal by Another with Python"
+    ],
+    [
+      "56533eb9ac21ba0edf2244ae",
+      "Finding a Remainder in Python"
+    ],
+
   ],
   "helpRoom": "HelpPython",
   "fileName": "10-python/basic-python.json"
