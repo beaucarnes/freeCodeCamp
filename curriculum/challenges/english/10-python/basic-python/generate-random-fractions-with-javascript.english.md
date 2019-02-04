@@ -1,13 +1,13 @@
 ---
 id: 5c55e842103ae886fa3ba94c
-title: Generate Random Fractions with JavaScript
-challengeType: 1
+title: Generate Random Fractions with Python
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
 Random numbers are useful for creating random behavior.
-JavaScript has a <code>Math.random()</code> function that generates a random decimal number between <code>0</code> (inclusive) and not quite up to <code>1</code> (exclusive). Thus <code>Math.random()</code> can return a <code>0</code> but never quite return a <code>1</code>
+Python has a <code>Math.random()</code> function that generates a random decimal number between <code>0</code> (inclusive) and not quite up to <code>1</code> (exclusive). Thus <code>Math.random()</code> can return a <code>0</code> but never quite return a <code>1</code>
 <strong>Note</strong><br>Like <a href='storing-values-with-the-assignment-operator' target='_blank'>Storing Values with the Equal Operator</a>, all function calls will be resolved before the <code>return</code> executes, so we can <code>return</code> the value of the <code>Math.random()</code> function.
 </section>
 
@@ -35,9 +35,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function randomFraction() {
 
   // Only change code below this line.
@@ -54,7 +54,7 @@ function randomFraction() {
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(){return randomFraction();})();
 ```
 
@@ -66,7 +66,7 @@ function randomFraction() {
 <section id='solution'>
 
 
-```js
+```python
 function randomFraction() {
   return Math.random();
 }

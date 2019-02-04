@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba961
 title: Returning Boolean Values from Functions
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -37,9 +37,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function isLess(a, b) {
   // Fix this code
   if (a < b) {
@@ -63,7 +63,7 @@ isLess(10, 15);
 <section id='solution'>
 
 
-```js
+```python
 function isLess(a, b) {
   return a < b;
 }

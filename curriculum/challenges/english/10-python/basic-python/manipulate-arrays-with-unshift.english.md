@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba961
 title: Manipulate Arrays With unshift()
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -30,9 +30,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourArray = ["Stimpson", "J", "cat"];
 ourArray.shift(); // ourArray now equals ["J", "cat"]
@@ -54,7 +54,7 @@ myArray.shift();
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(y, z){return 'myArray = ' + JSON.stringify(y);})(myArray);
 ```
 
@@ -66,7 +66,7 @@ myArray.shift();
 <section id='solution'>
 
 
-```js
+```python
 var myArray = [["John", 23], ["dog", 3]];
 myArray.shift();
 myArray.unshift(["Paul", 35]);

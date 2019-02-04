@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba932
 title: Comparison with the Less Than Or Equal To Operator
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -45,9 +45,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function testLessOrEqual(val) {
   if (val) {  // Change this line
     return "Smaller Than or Equal to 12";
@@ -75,7 +75,7 @@ testLessOrEqual(10);
 <section id='solution'>
 
 
-```js
+```python
 function testLessOrEqual(val) {
   if (val <= 12) {  // Change this line
     return "Smaller Than or Equal to 12";

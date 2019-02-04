@@ -1,12 +1,12 @@
 ---
 id: 5c55e842103ae886fa3ba97b
-title: Write Reusable JavaScript with Functions
-challengeType: 1
+title: Write Reusable Python with Functions
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
-In JavaScript, we can divide up our code into reusable parts called <dfn>functions</dfn>.
+In Python, we can divide up our code into reusable parts called <dfn>functions</dfn>.
 Here's an example of a function:
 <blockquote>function functionName() {<br>&nbsp;&nbsp;console.log("Hello World");<br>}</blockquote>
 You can call or <dfn>invoke</dfn> this function by using its name followed by parentheses, like this:
@@ -38,9 +38,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 function ourReusableFunction() {
   console.log("Heyya, World");
@@ -57,7 +57,7 @@ ourReusableFunction();
 ### Before Test
 <div id='js-setup'>
 
-```js
+```python
 var logOutput = "";
 var originalConsole = console
 function capture() {
@@ -85,7 +85,7 @@ capture();
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 uncapture();
 
 if (typeof reusableFunction !== "function") { 
@@ -103,7 +103,7 @@ if (typeof reusableFunction !== "function") {
 <section id='solution'>
 
 
-```js
+```python
 function reusableFunction() {
   console.log("Hi World");
 }

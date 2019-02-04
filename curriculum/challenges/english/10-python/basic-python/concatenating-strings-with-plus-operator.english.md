@@ -1,12 +1,12 @@
 ---
 id: 5c55e842103ae886fa3ba93b
 title: Concatenating Strings with Plus Operator
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
-In JavaScript, when the <code>+</code> operator is used with a <code>String</code> value, it is called the <dfn>concatenation</dfn> operator. You can build a new string out of other strings by <dfn>concatenating</dfn> them together.
+In Python, when the <code>+</code> operator is used with a <code>String</code> value, it is called the <dfn>concatenation</dfn> operator. You can build a new string out of other strings by <dfn>concatenating</dfn> them together.
 <strong>Example</strong>
 <blockquote>'My name is Alan,' + ' I concatenate.'</blockquote>
 <strong>Note</strong><br>Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
@@ -38,9 +38,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourStr = "I come first. " + "I come second.";
 
@@ -57,7 +57,7 @@ var myStr;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(){
   if(typeof myStr === 'string') {
     return 'myStr = "' + myStr + '"';
@@ -75,7 +75,7 @@ var myStr;
 <section id='solution'>
 
 
-```js
+```python
 var ourStr = "I come first. " + "I come second.";
 var myStr = "This is the start. " + "This is the end.";
 ```

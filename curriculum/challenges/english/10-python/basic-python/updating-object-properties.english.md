@@ -1,12 +1,12 @@
 ---
 id: 5c55e842103ae886fa3ba96e
 title: Updating Object Properties
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
-After you've created a JavaScript object, you can update its properties at any time just like you would update any other variable. You can use either dot or bracket notation to update.
+After you've created a Python object, you can update its properties at any time just like you would update any other variable. You can use either dot or bracket notation to update.
 For example, let's look at <code>ourDog</code>:
 <blockquote>var ourDog = {<br>&nbsp;&nbsp;"name": "Camper",<br>&nbsp;&nbsp;"legs": 4,<br>&nbsp;&nbsp;"tails": 1,<br>&nbsp;&nbsp;"friends": ["everything!"]<br>};</blockquote>
 Since he's a particularly happy dog, let's change his name to "Happy Camper". Here's how we update his object's name property:
@@ -37,9 +37,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourDog = {
   "name": "Camper",
@@ -69,7 +69,7 @@ var myDog = {
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(z){return z;})(myDog);
 ```
 
@@ -81,7 +81,7 @@ var myDog = {
 <section id='solution'>
 
 
-```js
+```python
 var myDog = {
   "name": "Coder",
   "legs": 4,

@@ -1,7 +1,7 @@
 ---
 id: 5c54ce0f103ae886fa3ba929
 title: Chaining If Else Statements
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -55,9 +55,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function testSize(num) {
   // Only change code below this line
 
@@ -80,7 +80,7 @@ testSize(7);
 <section id='solution'>
 
 
-```js
+```python
 function testSize(num) {
   if (num < 5) {
     return "Tiny";

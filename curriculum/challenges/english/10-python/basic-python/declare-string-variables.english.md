@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba941
 title: Declare String Variables
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -33,9 +33,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var firstName = "Alan";
 var lastName = "Turing";
@@ -51,7 +51,7 @@ var lastName = "Turing";
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 if(typeof myFirstName !== "undefined" && typeof myLastName !== "undefined"){(function(){return myFirstName + ', ' + myLastName;})();}
 ```
 
@@ -63,7 +63,7 @@ if(typeof myFirstName !== "undefined" && typeof myLastName !== "undefined"){(fun
 <section id='solution'>
 
 
-```js
+```python
 var myFirstName = "Alan";
 var myLastName = "Turing";
 ```

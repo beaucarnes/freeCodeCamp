@@ -1,15 +1,15 @@
 ---
 id: 5c55e842103ae886fa3ba938
 title: Compound Assignment With Augmented Division
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
 The <code>/=</code> operator divides a variable by another number.
-<code>myVar = myVar / 5;</code>
-Will divide <code>myVar</code> by <code>5</code>. This can be rewritten as:
-<code>myVar /= 5;</code>
+<code>my_var = my_var / 5;</code>
+Will divide <code>my_var</code> by <code>5</code>. This can be rewritten as:
+<code>my_var /= 5;</code>
 </section>
 
 ## Instructions
@@ -40,9 +40,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 var a = 48;
 var b = 108;
 var c = 33;
@@ -61,7 +61,7 @@ c = c / 11;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(a,b,c){ return "a = " + a + ", b = " + b + ", c = " + c; })(a,b,c);
 ```
 
@@ -73,7 +73,7 @@ c = c / 11;
 <section id='solution'>
 
 
-```js
+```python
 var a = 48;
 var b = 108;
 var c = 33;

@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba93e
 title: Count Backwards With a For Loop
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -38,9 +38,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourArray = [];
 
@@ -62,7 +62,7 @@ var myArray = [];
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 if(typeof myArray !== "undefined"){(function(){return myArray;})();}
 ```
 
@@ -74,7 +74,7 @@ if(typeof myArray !== "undefined"){(function(){return myArray;})();}
 <section id='solution'>
 
 
-```js
+```python
 var ourArray = [];
 for (var i = 10; i > 0; i -= 2) {
   ourArray.push(i);

@@ -1,7 +1,7 @@
 ---
 id: 5c54c9af103ae886fa3ba91c
 title: Access Array Data with Indexes
-challengeType: 1
+challengeType: 9
 guideUrl: 'https://www.freecodecamp.org/guide/certificates/access-array-data-with-indexes'
 ---
 
@@ -12,7 +12,7 @@ Array indexes are written in the same bracket notation that strings use, except 
 <br />
 <strong>Example</strong>
 <blockquote>var array = [50,60,70];<br>array[0]; // equals 50<br>var data = array[1];  // equals 60</blockquote>
-<strong>Note</strong><br>There shouldn't be any spaces between the array name and the square brackets, like <code>array [0]</code>. Although JavaScript is able to process this correctly, this may confuse other programmers reading your code.
+<strong>Note</strong><br>There shouldn't be any spaces between the array name and the square brackets, like <code>array [0]</code>. Although Python is able to process this correctly, this may confuse other programmers reading your code.
 </section>
 
 ## Instructions
@@ -37,9 +37,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourArray = [50,60,70];
 var ourData = ourArray[0]; // equals 50
@@ -57,7 +57,7 @@ var myArray = [50,60,70];
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 if(typeof myArray !== "undefined" && typeof myData !== "undefined"){(function(y,z){return 'myArray = ' + JSON.stringify(y) + ', myData = ' + JSON.stringify(z);})(myArray, myData);}
 ```
 
@@ -69,7 +69,7 @@ if(typeof myArray !== "undefined" && typeof myData !== "undefined"){(function(y,
 <section id='solution'>
 
 
-```js
+```python
 var myArray = [50,60,70];
 var myData = myArray[0];
 ```

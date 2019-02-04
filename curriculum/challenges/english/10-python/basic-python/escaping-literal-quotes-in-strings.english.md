@@ -1,16 +1,16 @@
 ---
 id: 5c55e842103ae886fa3ba949
 title: Escaping Literal Quotes in Strings
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
 When you are defining a string you must start and end with a single or double quote. What happens when you need a literal quote: <code>"</code> or <code>'</code> inside of your string?
-In JavaScript, you can <dfn>escape</dfn> a quote from considering it as an end of string quote by placing a <dfn>backslash</dfn> (<code>\</code>) in front of the quote.
-<code>var sampleStr = "Alan said, \"Peter is learning JavaScript\".";</code>
-This signals to JavaScript that the following quote is not the end of the string, but should instead appear inside the string. So if you were to print this to the console, you would get:
-<code>Alan said, "Peter is learning JavaScript".</code>
+In Python, you can <dfn>escape</dfn> a quote from considering it as an end of string quote by placing a <dfn>backslash</dfn> (<code>\</code>) in front of the quote.
+<code>var sampleStr = "Alan said, \"Peter is learning Python\".";</code>
+This signals to Python that the following quote is not the end of the string, but should instead appear inside the string. So if you were to print this to the console, you would get:
+<code>Alan said, "Peter is learning Python".</code>
 </section>
 
 ## Instructions
@@ -36,9 +36,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 var myStr = ""; // Change this line
 
 
@@ -50,7 +50,7 @@ var myStr = ""; // Change this line
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(){
   if(typeof myStr === 'string') {
     console.log("myStr = \"" + myStr + "\"");
@@ -68,7 +68,7 @@ var myStr = ""; // Change this line
 <section id='solution'>
 
 
-```js
+```python
 var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
 ```
 

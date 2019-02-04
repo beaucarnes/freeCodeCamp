@@ -58,7 +58,7 @@ print("test",test)
 ## Solution
 <section id='solution'>
 
-```js
+```python
 // solution required
 ```
 </section>

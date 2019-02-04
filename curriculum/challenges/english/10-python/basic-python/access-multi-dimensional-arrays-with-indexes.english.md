@@ -1,7 +1,7 @@
 ---
 id: 5c54cde7103ae886fa3ba91d
 title: Access Multi-Dimensional Arrays With Indexes
-challengeType: 1
+challengeType: 9
 guideUrl: 'https://www.freecodecamp.org/guide/certificates/access-array-data-with-indexes'
 ---
 
@@ -10,7 +10,7 @@ guideUrl: 'https://www.freecodecamp.org/guide/certificates/access-array-data-wit
 One way to think of a <dfn>multi-dimensional</dfn> array, is as an <em>array of arrays</em>. When you use brackets to access your array, the first set of brackets refers to the entries in the outer-most (the first level) array, and each additional pair of brackets refers to the next level of entries inside.
 <strong>Example</strong>
 <blockquote>var arr = [<br>&nbsp;&nbsp;[1,2,3],<br>&nbsp;&nbsp;[4,5,6],<br>&nbsp;&nbsp;[7,8,9],<br>&nbsp;&nbsp;[[10,11,12], 13, 14]<br>];<br>arr[3]; // equals [[10,11,12], 13, 14]<br>arr[3][0]; // equals [10,11,12]<br>arr[3][0][1]; // equals 11</blockquote>
-<strong>Note</strong><br>There shouldn't be any spaces between the array name and the square brackets, like <code>array [0][0]</code> and even this <code>array [0] [0]</code> is not allowed. Although JavaScript is able to process this correctly, this may confuse other programmers reading your code.
+<strong>Note</strong><br>There shouldn't be any spaces between the array name and the square brackets, like <code>array [0][0]</code> and even this <code>array [0] [0]</code> is not allowed. Although Python is able to process this correctly, this may confuse other programmers reading your code.
 </section>
 
 ## Instructions
@@ -35,9 +35,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
 
@@ -52,7 +52,7 @@ var myData = myArray[0][0];
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 if(typeof myArray !== "undefined"){(function(){return "myData: " + myData + " myArray: " + JSON.stringify(myArray);})();}
 ```
 
@@ -64,7 +64,7 @@ if(typeof myArray !== "undefined"){(function(){return "myData: " + myData + " my
 <section id='solution'>
 
 
-```js
+```python
 var myArray = [[1,2,3],[4,5,6], [7,8,9], [[10,11,12], 13, 14]];
 var myData = myArray[2][1];
 ```

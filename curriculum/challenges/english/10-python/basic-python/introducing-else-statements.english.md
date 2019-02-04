@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba956
 title: Introducing Else Statements
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -42,9 +42,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function testElse(val) {
   var result = "";
   // Only change code below this line
@@ -76,7 +76,7 @@ testElse(4);
 <section id='solution'>
 
 
-```js
+```python
 function testElse(val) {
   var result = "";
   if(val > 5) {

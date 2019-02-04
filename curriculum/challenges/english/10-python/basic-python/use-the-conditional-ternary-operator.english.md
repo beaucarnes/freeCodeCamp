@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba975
 title: Use the Conditional (Ternary) Operator
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -40,9 +40,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function checkEqual(a, b) {
 
 }
@@ -59,7 +59,7 @@ checkEqual(1, 2);
 ## Solution
 <section id='solution'>
 
-```js
+```python
 function checkEqual(a, b) {
   return a === b ? "Equal" : "Not Equal";
 }

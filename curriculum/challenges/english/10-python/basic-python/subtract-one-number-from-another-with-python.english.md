@@ -1,16 +1,16 @@
 ---
 id: 5c55e842103ae886fa3ba967
-title: Subtract One Number from Another with JavaScript
-challengeType: 1
+title: Subtract One Number from Another with Python
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
 We can also subtract one number from another.
-JavaScript uses the <code>-</code> symbol for subtraction.
+Python uses the <code>-</code> symbol for subtraction.
 
 <strong>Example</strong>
-<blockquote>myVar = 12 - 6; // assigned 6</blockquote>
+<blockquote>my_var = 12 - 6; # assigned 6</blockquote>
 
 </section>
 
@@ -25,10 +25,11 @@ Change the <code>0</code> so the difference is <code>12</code>.
 ```yml
 tests:
   - text: Make the variable <code>difference</code> equal 12.
-    testString: assert(difference === 12, 'Make the variable <code>difference</code> equal 12.');
-  - text: Only subtract one number from 45.
-    testString: assert(/var\s*difference\s*=\s*45\s*-\s*[0-9]*;(?!\s*[a-zA-Z0-9]+)/.test(code),'Only subtract one number from 45.');
-
+    testString: difference == 12
+    type: code
+  - text: Use the <code>-</code> operator
+    testString: input => input.includes('-')
+    type: input
 ```
 
 </section>
@@ -36,25 +37,15 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
-var difference = 45 - 0;
-
+```python
+difference = 45 - 0;
 
 ```
 
 </div>
 
-
-### After Test
-<div id='js-teardown'>
-
-```js
-(function(z){return 'difference = '+z;})(difference);
-```
-
-</div>
 
 </section>
 
@@ -62,8 +53,8 @@ var difference = 45 - 0;
 <section id='solution'>
 
 
-```js
-var difference = 45 - 33;
+```python
+difference = 45 - 33;
 ```
 
 </section>

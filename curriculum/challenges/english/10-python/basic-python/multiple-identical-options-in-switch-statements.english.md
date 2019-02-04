@@ -1,7 +1,7 @@
 ---
 id: 5c15e842103ae116fa3ba954
 title: Multiple Identical Options in Switch Statements
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -52,9 +52,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function sequentialSizes(val) {
   var answer = "";
   // Only change code below this line
@@ -80,7 +80,7 @@ sequentialSizes(1);
 <section id='solution'>
 
 
-```js
+```python
 function sequentialSizes(val) {
   var answer = "";
 

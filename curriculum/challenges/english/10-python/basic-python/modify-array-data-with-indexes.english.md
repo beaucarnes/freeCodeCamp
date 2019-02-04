@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba953
 title: Modify Array Data With Indexes
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -9,7 +9,7 @@ challengeType: 1
 Unlike strings, the entries of arrays are <dfn>mutable</dfn> and can be changed freely.
 <strong>Example</strong>
 <blockquote>var ourArray = [50,40,30];<br>ourArray[0] = 15; // equals [15,40,30]</blockquote>
-<strong>Note</strong><br>There shouldn't be any spaces between the array name and the square brackets, like <code>array [0]</code>. Although JavaScript is able to process this correctly, this may confuse other programmers reading your code.
+<strong>Note</strong><br>There shouldn't be any spaces between the array name and the square brackets, like <code>array [0]</code>. Although Python is able to process this correctly, this may confuse other programmers reading your code.
 </section>
 
 ## Instructions
@@ -34,9 +34,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourArray = [18,64,99];
 ourArray[1] = 45; // ourArray now equals [18,45,99].
@@ -55,7 +55,7 @@ var myArray = [18,64,99];
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 if(typeof myArray !== "undefined"){(function(){return myArray;})();}
 ```
 
@@ -67,7 +67,7 @@ if(typeof myArray !== "undefined"){(function(){return myArray;})();}
 <section id='solution'>
 
 
-```js
+```python
 var myArray = [18,64,99];
 myArray[0] = 45;
 ```

@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba93d
 title: Constructing Strings with Variables
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -31,9 +31,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourName = "freeCodeCamp";
 var ourStr = "Hello, our name is " + ourName + ", how are you?";
@@ -51,7 +51,7 @@ var myStr;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(){
   var output = [];
   if(typeof myName === 'string') {
@@ -76,7 +76,7 @@ var myStr;
 <section id='solution'>
 
 
-```js
+```python
 var myName = "Bob";
 var myStr = "My name is " + myName + " and I am well!";
 ```

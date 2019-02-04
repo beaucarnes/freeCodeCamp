@@ -1,12 +1,12 @@
 ---
 id: 5c55e842103ae886fa3ba958
 title: Iterate Through an Array with a For Loop
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
-A common task in JavaScript is to iterate through the contents of an array. One way to do that is with a <code>for</code> loop. This code will output each element of the array <code>arr</code> to the console:
+A common task in Python is to iterate through the contents of an array. One way to do that is with a <code>for</code> loop. This code will output each element of the array <code>arr</code> to the console:
 <blockquote>var arr = [10,9,8,7,6];<br>for (var i = 0; i < arr.length; i++) {<br>&nbsp;&nbsp; console.log(arr[i]);<br>}</blockquote>
 Remember that Arrays have zero-based numbering, which means the last index of the array is length - 1. Our <dfn>condition</dfn> for this loop is <code>i < arr.length</code>, which stops when <code>i</code> is at length - 1.
 </section>
@@ -37,9 +37,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourArr = [ 9, 10, 11, 12];
 var ourTotal = 0;
@@ -62,7 +62,7 @@ var myArr = [ 2, 3, 4, 5, 6];
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(){if(typeof total !== 'undefined') { return "total = " + total; } else { return "total is undefined";}})()
 
 ```
@@ -75,7 +75,7 @@ var myArr = [ 2, 3, 4, 5, 6];
 <section id='solution'>
 
 
-```js
+```python
 var ourArr = [ 9, 10, 11, 12];
 var ourTotal = 0;
 

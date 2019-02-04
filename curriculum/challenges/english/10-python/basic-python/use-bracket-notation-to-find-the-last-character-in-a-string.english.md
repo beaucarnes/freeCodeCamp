@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba96f
 title: Use Bracket Notation to Find the Last Character in a String
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -33,9 +33,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var firstName = "Ada";
 var lastLetterOfFirstName = firstName[firstName.length - 1];
@@ -55,7 +55,7 @@ var lastLetterOfLastName = lastName;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(v){return v;})(lastLetterOfLastName);
 ```
 
@@ -67,7 +67,7 @@ var lastLetterOfLastName = lastName;
 <section id='solution'>
 
 
-```js
+```python
 var firstName = "Ada";
 var lastLetterOfFirstName = firstName[firstName.length - 1];
 

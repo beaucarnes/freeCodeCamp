@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba959
 title: Passing Values to Functions with Arguments
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -40,9 +40,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 function ourFunctionWithArgs(a, b) {
   console.log(a - b);
@@ -59,7 +59,7 @@ ourFunctionWithArgs(10, 5); // Outputs 5
 ### Before Test
 <div id='js-setup'>
 
-```js
+```python
 var logOutput = "";
 var originalConsole = console
 function capture() {
@@ -87,7 +87,7 @@ capture();
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 uncapture();
 
 if (typeof functionWithArgs !== "function") { 
@@ -105,7 +105,7 @@ if (typeof functionWithArgs !== "function") {
 <section id='solution'>
 
 
-```js
+```python
 function functionWithArgs(a, b) {
   console.log(a + b);
 }

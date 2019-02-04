@@ -1,7 +1,7 @@
 ---
 id: 5c54ce0f103ae886fa3ba92e
 title: Comparison with the Greater Than Or Equal To Operator
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -46,9 +46,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function testGreaterOrEqual(val) {
   if (val) {  // Change this line
     return "20 or Over";
@@ -75,7 +75,7 @@ testGreaterOrEqual(10);
 <section id='solution'>
 
 
-```js
+```python
 function testGreaterOrEqual(val) {
   if (val >= 20) {  // Change this line
     return "20 or Over";

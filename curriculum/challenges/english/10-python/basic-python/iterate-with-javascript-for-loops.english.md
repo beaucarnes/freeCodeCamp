@@ -1,13 +1,13 @@
 ---
 id: 5c55e842103ae886fa3ba95a
-title: Iterate with JavaScript For Loops
-challengeType: 1
+title: Iterate with Python For Loops
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
 You can run the same code multiple times by using a loop.
-The most common type of JavaScript loop is called a "<code>for loop</code>" because it runs "for" a specific number of times.
+The most common type of Python loop is called a "<code>for loop</code>" because it runs "for" a specific number of times.
 For loops are declared with three optional expressions separated by semicolons:
 <code>for ([initialization]; [condition]; [final-expression])</code>
 The <code>initialization</code> statement is executed one time only before the loop starts. It is typically used to define and setup your loop variable.
@@ -40,9 +40,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourArray = [];
 
@@ -64,7 +64,7 @@ var myArray = [];
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 if (typeof myArray !== "undefined"){(function(){return myArray;})();}
 ```
 
@@ -76,7 +76,7 @@ if (typeof myArray !== "undefined"){(function(){return myArray;})();}
 <section id='solution'>
 
 
-```js
+```python
 var ourArray = [];
 for (var i = 0; i < 5; i++) {
   ourArray.push(i);

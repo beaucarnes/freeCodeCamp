@@ -1,7 +1,7 @@
 ---
 id: 5c54ce0f103ae886fa3ba925
 title: Adding a Default Option in Switch Statements
-challengeType: 1
+challengeType: 9
 guideUrl: 'https://www.freecodecamp.org/guide/certificates/adding-a-default-option-in-switch-statements'
 ---
 
@@ -46,9 +46,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function switchOfStuff(val) {
   var answer = "";
   // Only change code below this line
@@ -74,7 +74,7 @@ switchOfStuff(1);
 <section id='solution'>
 
 
-```js
+```python
 function switchOfStuff(val) {
   var answer = "";
 

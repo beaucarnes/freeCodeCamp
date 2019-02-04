@@ -1,7 +1,7 @@
 ---
 id: 5c54ce0f103ae886fa3ba92c
 title: Comparison with the Greater Than Operator
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -46,9 +46,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function testGreaterThan(val) {
   if (val) {  // Change this line
     return "Over 100";
@@ -75,7 +75,7 @@ testGreaterThan(10);
 <section id='solution'>
 
 
-```js
+```python
 function testGreaterThan(val) {
   if (val > 100) {  // Change this line
     return "Over 100";

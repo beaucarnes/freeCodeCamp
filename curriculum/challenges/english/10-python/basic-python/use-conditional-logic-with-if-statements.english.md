@@ -1,12 +1,12 @@
 ---
 id: 5c55e842103ae886fa3ba973
 title: Use Conditional Logic with If Statements
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
-<code>If</code> statements are used to make decisions in code. The keyword <code>if</code> tells JavaScript to execute the code in the curly braces under certain conditions, defined in the parentheses. These conditions are known as <code>Boolean</code> conditions and they may only be <code>true</code> or <code>false</code>.
+<code>If</code> statements are used to make decisions in code. The keyword <code>if</code> tells Python to execute the code in the curly braces under certain conditions, defined in the parentheses. These conditions are known as <code>Boolean</code> conditions and they may only be <code>true</code> or <code>false</code>.
 When the condition evaluates to <code>true</code>, the program executes the statement inside the curly braces. When the Boolean condition evaluates to <code>false</code>, the statement inside the curly braces will not execute.
 <strong>Pseudocode</strong>
 <blockquote>if (<i>condition is true</i>) {<br>&nbsp;&nbsp;<i>statement is executed</i><br>}</blockquote>
@@ -43,9 +43,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 function ourTrueOrFalse(isItTrue) {
   if (isItTrue) {
@@ -79,7 +79,7 @@ trueOrFalse(true);
 <section id='solution'>
 
 
-```js
+```python
 function trueOrFalse(wasThatTrue) {
   if (wasThatTrue) {
     return "Yes, that was true";

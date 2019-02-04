@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba946
-title: Divide One Decimal by Another with JavaScript
-challengeType: 1
+title: Divide One Decimal by Another with Python
+challengeType: 9
 ---
 
 ## Description
@@ -33,9 +33,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 var quotient = 0.0 / 2.0; // Fix this line
 
 
@@ -47,7 +47,7 @@ var quotient = 0.0 / 2.0; // Fix this line
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(y){return 'quotient = '+y;})(quotient);
 ```
 
@@ -58,7 +58,7 @@ var quotient = 0.0 / 2.0; // Fix this line
 ## Solution
 <section id='solution'>
 
-```js
+```python
 // solution required
 ```
 </section>

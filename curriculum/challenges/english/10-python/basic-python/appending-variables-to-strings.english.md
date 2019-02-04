@@ -1,7 +1,7 @@
 ---
 id: 5c54ce0f103ae886fa3ba926
 title: Appending Variables to Strings
-challengeType: 1
+challengeType: 9
 guideUrl: 'https://www.freecodecamp.org/guide/certificates/appending-variables-to-strings'
 ---
 
@@ -32,9 +32,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var anAdjective = "awesome!";
 var ourStr = "freeCodeCamp is ";
@@ -53,7 +53,7 @@ var myStr = "Learning to code is ";
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(){
   var output = [];
   if(typeof someAdjective === 'string') {
@@ -78,7 +78,7 @@ var myStr = "Learning to code is ";
 <section id='solution'>
 
 
-```js
+```python
 var anAdjective = "awesome!";
 var ourStr = "freeCodeCamp is ";
 ourStr += anAdjective;

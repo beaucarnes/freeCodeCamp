@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba95d
 title: Logical Order in If Else Statements
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -41,9 +41,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function orderMyLogic(val) {
   if (val < 10) {
     return "Less than 10";
@@ -68,7 +68,7 @@ orderMyLogic(7);
 <section id='solution'>
 
 
-```js
+```python
 function orderMyLogic(val) {
   if(val < 5) {
     return "Less than 5";

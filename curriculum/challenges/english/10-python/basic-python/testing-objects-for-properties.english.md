@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba968
 title: Testing Objects for Properties
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -35,9 +35,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 var myObj = {
   gift: "pony",
@@ -65,7 +65,7 @@ checkObj("gift");
 <section id='solution'>
 
 
-```js
+```python
 var myObj = {
   gift: "pony",
   pet: "kitten",

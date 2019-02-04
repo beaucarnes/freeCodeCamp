@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba95d
 title: Record Collection
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -15,8 +15,8 @@ If <code>prop</code> is <code>"tracks"</code> but the album doesn't have a <code
 If <code>prop</code> is <code>"tracks"</code> and <code>value</code> isn't empty (<code>""</code>), push the <code>value</code> onto the end of the album's existing <code>tracks</code> array.
 If <code>value</code> is empty (<code>""</code>), delete the given <code>prop</code> property from the album.
 <strong>Hints</strong><br>Use <code>bracket notation</code> when <a href="javascript-algorithms-and-data-structures/basic-javascript/accessing-object-properties-with-variables" target="_blank">accessing object properties with variables</a>.
-Push is an array method you can read about on <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push" target="_blank">Mozilla Developer Network</a>.
-You may refer back to <a href="javascript-algorithms-and-data-structures/basic-javascript/manipulating-complex-objects" target="_blank">Manipulating Complex Objects</a> Introducing JavaScript Object Notation (JSON) for a refresher.
+Push is an array method you can read about on <a href="https://developer.mozilla.org/en-US/docs/Web/Python/Reference/Global_Objects/Array/push" target="_blank">Mozilla Developer Network</a>.
+You may refer back to <a href="javascript-algorithms-and-data-structures/basic-javascript/manipulating-complex-objects" target="_blank">Manipulating Complex Objects</a> Introducing Python Object Notation (JSON) for a refresher.
 </section>
 
 ## Instructions
@@ -51,9 +51,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 var collection = {
     "2548": {
@@ -101,7 +101,7 @@ updateRecords(5439, "artist", "ABBA");
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 ;(function(x) { return "collection = \n" + JSON.stringify(x, '\n', 2); })(collection);
 ```
 
@@ -113,7 +113,7 @@ updateRecords(5439, "artist", "ABBA");
 <section id='solution'>
 
 
-```js
+```python
 var collection = {
     2548: {
       album: "Slippery When Wet",

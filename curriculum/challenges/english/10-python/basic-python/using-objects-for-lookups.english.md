@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba978
 title: Using Objects for Lookups
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -47,9 +47,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 function phoneticLookup(val) {
   var result = "";
@@ -93,7 +93,7 @@ phoneticLookup("charlie");
 <section id='solution'>
 
 
-```js
+```python
 function phoneticLookup(val) {
   var result = "";
 

@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba94b
-title: Finding a Remainder in JavaScript
-challengeType: 1
+title: Finding a Remainder in Python
+challengeType: 9
 ---
 
 ## Description
@@ -38,9 +38,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Only change code below this line
 
 var remainder;
@@ -53,7 +53,7 @@ var remainder;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(y){return 'remainder = '+y;})(remainder);
 ```
 
@@ -65,7 +65,7 @@ var remainder;
 <section id='solution'>
 
 
-```js
+```python
 var remainder =  11 % 3;
 ```
 

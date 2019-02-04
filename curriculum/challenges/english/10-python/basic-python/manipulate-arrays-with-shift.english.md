@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba960
 title: Manipulate Arrays With shift()
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -32,9 +32,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourArray = ["Stimpson", "J", ["cat"]];
 var removedFromOurArray = ourArray.shift();
@@ -55,7 +55,7 @@ var removedFromMyArray;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(y, z){return 'myArray = ' + JSON.stringify(y) + ' & removedFromMyArray = ' + JSON.stringify(z);})(myArray, removedFromMyArray);
 ```
 
@@ -67,7 +67,7 @@ var removedFromMyArray;
 <section id='solution'>
 
 
-```js
+```python
 var myArray = [["John", 23], ["dog", 3]];
 
 // Only change code below this line.

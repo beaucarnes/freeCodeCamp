@@ -1,13 +1,13 @@
 ---
 id: 5c55e842103ae886fa3ba971
 title: Use Bracket Notation to Find the First Character in a String
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
 <code>Bracket notation</code> is a way to get a character at a specific <code>index</code> within a string.
-Most modern programming languages, like JavaScript, don't start counting at 1 like humans do. They start at 0. This is referred to as <dfn>Zero-based</dfn> indexing.
+Most modern programming languages, like Python, don't start counting at 1 like humans do. They start at 0. This is referred to as <dfn>Zero-based</dfn> indexing.
 For example, the character at index 0 in the word "Charles" is "C". So if <code>var firstName = "Charles"</code>, you can get the value of the first letter of the string by using <code>firstName[0]</code>.
 </section>
 
@@ -34,9 +34,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var firstLetterOfFirstName = "";
 var firstName = "Ada";
@@ -59,7 +59,7 @@ firstLetterOfLastName = lastName;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(v){return v;})(firstLetterOfLastName);
 ```
 
@@ -71,7 +71,7 @@ firstLetterOfLastName = lastName;
 <section id='solution'>
 
 
-```js
+```python
 var firstLetterOfLastName = "";
 var lastName = "Lovelace";
 

@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba964
 title: Stand in Line
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -40,9 +40,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function nextInLine(arr, item) {
   // Your code here
 
@@ -63,7 +63,7 @@ console.log("After: " + JSON.stringify(testArr));
 ### Before Test
 <div id='js-setup'>
 
-```js
+```python
 var logOutput = [];
 var originalConsole = console
 function capture() {
@@ -91,7 +91,7 @@ capture();
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 uncapture();
 testArr = [1,2,3,4,5];
 (function() { return logOutput.join("\n");})();
@@ -105,7 +105,7 @@ testArr = [1,2,3,4,5];
 <section id='solution'>
 
 
-```js
+```python
 var testArr = [ 1,2,3,4,5];
 
 function nextInLine(arr, item) {

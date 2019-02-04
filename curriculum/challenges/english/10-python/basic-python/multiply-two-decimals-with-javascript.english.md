@@ -1,12 +1,12 @@
 ---
 id: 5c55e842103ae886fa3ba955
-title: Multiply Two Decimals with JavaScript
-challengeType: 1
+title: Multiply Two Decimals with Python
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
-In JavaScript, you can also perform calculations with decimal numbers, just like whole numbers.
+In Python, you can also perform calculations with decimal numbers, just like whole numbers.
 Let's multiply two decimals together to get their product.
 </section>
 
@@ -32,9 +32,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 var product = 2.0 * 0.0;
 
 
@@ -46,7 +46,7 @@ var product = 2.0 * 0.0;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(y){return 'product = '+y;})(product);
 ```
 
@@ -58,7 +58,7 @@ var product = 2.0 * 0.0;
 <section id='solution'>
 
 
-```js
+```python
 var product = 2.0 * 2.5;
 ```
 

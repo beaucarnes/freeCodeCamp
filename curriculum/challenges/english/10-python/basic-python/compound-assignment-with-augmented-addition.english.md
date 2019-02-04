@@ -1,16 +1,16 @@
 ---
 id: 5c55e842103ae886fa3ba937
 title: Compound Assignment With Augmented Addition
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
 In programming, it is common to use assignments to modify the contents of a variable. Remember that everything to the right of the equals sign is evaluated first, so we can say:
-<code>myVar = myVar + 5;</code>
-to add <code>5</code> to <code>myVar</code>. Since this is such a common pattern, there are operators which do both a mathematical operation and assignment in one step.
+<code>my_var = my_var + 5;</code>
+to add <code>5</code> to <code>my_var</code>. Since this is such a common pattern, there are operators which do both a mathematical operation and assignment in one step.
 One such operator is the <code>+=</code> operator.
-<blockquote>var myVar = 1;<br>myVar += 5;<br>console.log(myVar); // Returns 6</blockquote>
+<blockquote>var my_var = 1;<br>my_var += 5;<br>console.log(my_var); // Returns 6</blockquote>
 </section>
 
 ## Instructions
@@ -41,9 +41,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 var a = 3;
 var b = 17;
 var c = 12;
@@ -62,7 +62,7 @@ c = c + 7;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(a,b,c){ return "a = " + a + ", b = " + b + ", c = " + c; })(a,b,c);
 ```
 
@@ -74,7 +74,7 @@ c = c + 7;
 <section id='solution'>
 
 
-```js
+```python
 var a = 3;
 var b = 17;
 var c = 12;

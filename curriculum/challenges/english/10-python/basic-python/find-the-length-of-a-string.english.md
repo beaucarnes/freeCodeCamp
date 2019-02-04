@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba94a
 title: Find the Length of a String
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -33,9 +33,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var firstNameLength = 0;
 var firstName = "Ada";
@@ -59,7 +59,7 @@ lastNameLength = lastName;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 if(typeof lastNameLength !== "undefined"){(function(){return lastNameLength;})();}
 ```
 
@@ -71,7 +71,7 @@ if(typeof lastNameLength !== "undefined"){(function(){return lastNameLength;})()
 <section id='solution'>
 
 
-```js
+```python
 var firstNameLength = 0;
 var firstName = "Ada";
 firstNameLength = firstName.length;

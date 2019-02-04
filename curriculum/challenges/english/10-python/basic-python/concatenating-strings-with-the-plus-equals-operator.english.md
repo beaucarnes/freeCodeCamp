@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba93c
 title: Concatenating Strings with the Plus Equals Operator
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -32,9 +32,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourStr = "I come first. ";
 ourStr += "I come second.";
@@ -52,7 +52,7 @@ var myStr;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(){
   if(typeof myStr === 'string') {
     return 'myStr = "' + myStr + '"';
@@ -70,7 +70,7 @@ var myStr;
 <section id='solution'>
 
 
-```js
+```python
 var ourStr = "I come first. ";
 ourStr += "I come second.";
 

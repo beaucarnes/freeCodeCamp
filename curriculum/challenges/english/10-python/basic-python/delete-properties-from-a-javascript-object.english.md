@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba945
-title: Delete Properties from a JavaScript Object
-challengeType: 1
+title: Delete Properties from a Python Object
+challengeType: 9
 ---
 
 ## Description
@@ -32,9 +32,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourDog = {
   "name": "Camper",
@@ -66,7 +66,7 @@ var myDog = {
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(z){return z;})(myDog);
 ```
 
@@ -78,7 +78,7 @@ var myDog = {
 <section id='solution'>
 
 
-```js
+```python
 var ourDog = {
   "name": "Camper",
   "legs": 4,

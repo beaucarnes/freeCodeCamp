@@ -1,12 +1,12 @@
 ---
 id: 5c55e842103ae886fa3ba969
 title: Understand String Immutability
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
-In JavaScript, <code>String</code> values are <dfn>immutable</dfn>, which means that they cannot be altered once created.
+In Python, <code>String</code> values are <dfn>immutable</dfn>, which means that they cannot be altered once created.
 For example, the following code:
 <blockquote>var myStr = "Bob";<br>myStr[0] = "J";</blockquote>
 cannot change the value of <code>myStr</code> to "Job", because the contents of <code>myStr</code> cannot be altered. Note that this does <em>not</em> mean that <code>myStr</code> cannot be changed, just that the individual characters of a <dfn>string literal</dfn> cannot be changed. The only way to change <code>myStr</code> would be to assign it with a new string, like this:
@@ -35,9 +35,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 var myStr = "Jello World";
 
@@ -54,7 +54,7 @@ myStr[0] = "H"; // Fix Me
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(v){return "myStr = " + v;})(myStr);
 ```
 
@@ -66,7 +66,7 @@ myStr[0] = "H"; // Fix Me
 <section id='solution'>
 
 
-```js
+```python
 var myStr = "Jello World";
 myStr = "Hello World";
 ```

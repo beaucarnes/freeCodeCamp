@@ -1,12 +1,12 @@
 ---
 id: 5c55e842103ae886fa3ba950
 title: Global Scope and Functions
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
-In JavaScript, <dfn>scope</dfn> refers to the visibility of variables. Variables which are defined outside of a function block have <dfn>Global</dfn> scope. This means, they can be seen everywhere in your JavaScript code.
+In Python, <dfn>scope</dfn> refers to the visibility of variables. Variables which are defined outside of a function block have <dfn>Global</dfn> scope. This means, they can be seen everywhere in your Python code.
 Variables which are used without the <code>var</code> keyword are automatically created in the <code>global</code> scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with <code>var</code>.
 </section>
 
@@ -37,9 +37,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Declare your variable here
 
 
@@ -66,7 +66,7 @@ function fun2() {
 ### Before Test
 <div id='js-setup'>
 
-```js
+```python
 var logOutput = "";
 var originalConsole = console
 function capture() {
@@ -94,7 +94,7 @@ capture();
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 fun1();
 fun2();
 uncapture();
@@ -109,7 +109,7 @@ uncapture();
 <section id='solution'>
 
 
-```js
+```python
 // Declare your variable here
 var myGlobal = 10;
 

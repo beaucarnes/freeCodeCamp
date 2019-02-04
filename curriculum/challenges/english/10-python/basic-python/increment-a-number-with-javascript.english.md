@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba953
-title: Increment a Number with JavaScript
-challengeType: 1
+title: Increment a Number with Python
+challengeType: 9
 ---
 
 ## Description
@@ -15,8 +15,8 @@ is the equivalent of
 
 ## Instructions
 <section id='instructions'>
-Change the code to use the <code>++</code> operator on <code>myVar</code>.
-<strong>Hint</strong><br>Learn more about <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Increment_()" target="_blank">Arithmetic operators - Increment (++)</a>.
+Change the code to use the <code>++</code> operator on <code>my_var</code>.
+<strong>Hint</strong><br>Learn more about <a href="https://developer.mozilla.org/en/docs/Web/Python/Reference/Operators/Arithmetic_Operators#Increment_()" target="_blank">Arithmetic operators - Increment (++)</a>.
 </section>
 
 ## Tests
@@ -24,14 +24,14 @@ Change the code to use the <code>++</code> operator on <code>myVar</code>.
 
 ```yml
 tests:
-  - text: <code>myVar</code> should equal <code>88</code>
-    testString: assert(myVar === 88, '<code>myVar</code> should equal <code>88</code>');
-  - text: <code>myVar = myVar + 1;</code> should be changed
-    testString: assert(/var\s*myVar\s*=\s*87;\s*\/*.*\s*([+]{2}\s*myVar|myVar\s*[+]{2});/.test(code), '<code>myVar = myVar + 1;</code> should be changed');
+  - text: <code>my_var</code> should equal <code>88</code>
+    testString: assert(my_var === 88, '<code>my_var</code> should equal <code>88</code>');
+  - text: <code>my_var = my_var + 1;</code> should be changed
+    testString: assert(/var\s*my_var\s*=\s*87;\s*\/*.*\s*([+]{2}\s*my_var|my_var\s*[+]{2});/.test(code), '<code>my_var = my_var + 1;</code> should be changed');
   - text: Use the <code>++</code> operator
-    testString: assert(/[+]{2}\s*myVar|myVar\s*[+]{2}/.test(code), 'Use the <code>++</code> operator');
+    testString: assert(/[+]{2}\s*my_var|my_var\s*[+]{2}/.test(code), 'Use the <code>++</code> operator');
   - text: Do not change code above the line
-    testString: assert(/var myVar = 87;/.test(code), 'Do not change code above the line');
+    testString: assert(/var my_var = 87;/.test(code), 'Do not change code above the line');
 
 ```
 
@@ -40,13 +40,13 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
-var myVar = 87;
+```python
+var my_var = 87;
 
 // Only change code below this line
-myVar = myVar + 1;
+my_var = my_var + 1;
 
 ```
 
@@ -56,8 +56,8 @@ myVar = myVar + 1;
 ### After Test
 <div id='js-teardown'>
 
-```js
-(function(z){return 'myVar = ' + z;})(myVar);
+```python
+(function(z){return 'my_var = ' + z;})(my_var);
 ```
 
 </div>
@@ -68,9 +68,9 @@ myVar = myVar + 1;
 <section id='solution'>
 
 
-```js
-var myVar = 87;
-myVar++;
+```python
+var my_var = 87;
+my_var++;
 ```
 
 </section>

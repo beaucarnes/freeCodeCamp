@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba977
 title: Use the parseInt Function
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -39,9 +39,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function convertToInteger(str) {
 
 }
@@ -58,7 +58,7 @@ convertToInteger("56");
 ## Solution
 <section id='solution'>
 
-```js
+```python
 function convertToInteger(str) {
   return parseInt(str);
 }

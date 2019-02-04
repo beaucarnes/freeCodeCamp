@@ -1,7 +1,7 @@
 ---
 id: 56533eb9ac21ba0edf2244cc
 title: Accessing Nested Objects
-challengeType: 1
+challengeType: 9
 guideUrl: 'https://www.freecodecamp.org/guide/certificates/accessing-nested-objects-in-json'
 ---
 
@@ -34,9 +34,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 var myStorage = {
   "car": {
@@ -60,7 +60,7 @@ var gloveBoxContents = undefined; // Change this line
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(x) { 
   if(typeof x != 'undefined') { 
     return "gloveBoxContents = " + x;
@@ -77,7 +77,7 @@ var gloveBoxContents = undefined; // Change this line
 <section id='solution'>
 
 
-```js
+```python
 var myStorage = {
   "car":{
     "inside":{

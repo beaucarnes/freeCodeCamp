@@ -1,15 +1,15 @@
 ---
 id: 5c55e842103ae886fa3ba93a
 title: Compound Assignment With Augmented Subtraction
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
 Like the <code>+=</code> operator, <code>-=</code> subtracts a number from a variable.
-<code>myVar = myVar - 5;</code>
-will subtract <code>5</code> from <code>myVar</code>. This can be rewritten as:
-<code>myVar -= 5;</code>
+<code>my_var = my_var - 5;</code>
+will subtract <code>5</code> from <code>my_var</code>. This can be rewritten as:
+<code>my_var -= 5;</code>
 </section>
 
 ## Instructions
@@ -40,9 +40,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 var a = 11;
 var b = 9;
 var c = 3;
@@ -62,7 +62,7 @@ c = c - 1;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(a,b,c){ return "a = " + a + ", b = " + b + ", c = " + c; })(a,b,c);
 ```
 
@@ -74,7 +74,7 @@ c = c - 1;
 <section id='solution'>
 
 
-```js
+```python
 var a = 11;
 var b = 9;
 var c = 3;

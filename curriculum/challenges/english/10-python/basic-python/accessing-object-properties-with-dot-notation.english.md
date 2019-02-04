@@ -1,7 +1,7 @@
 ---
 id: 5c54ce0f103ae886fa3ba920
 title: Accessing Object Properties with Dot Notation
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -40,9 +40,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 var testObj = {
   "hat": "ballcap",
@@ -62,7 +62,7 @@ var shirtValue = testObj;    // Change this line
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(a,b) { return "hatValue = '" + a + "', shirtValue = '" + b + "'"; })(hatValue,shirtValue);
 ```
 
@@ -74,7 +74,7 @@ var shirtValue = testObj;    // Change this line
 <section id='solution'>
 
 
-```js
+```python
 var testObj = {
   "hat": "ballcap",
   "shirt": "jersey",

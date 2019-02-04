@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba931
 title: Comparison with the Less Than Operator
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -43,9 +43,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function testLessThan(val) {
   if (val) {  // Change this line
     return "Under 25";
@@ -72,7 +72,7 @@ testLessThan(10);
 <section id='solution'>
 
 
-```js
+```python
 function testLessThan(val) {
   if (val < 25) {  // Change this line
     return "Under 25";

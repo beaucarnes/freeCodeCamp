@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba951
 title: Global vs. Local Scope in Functions
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -36,9 +36,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 var outerWear = "T-Shirt";
 
@@ -64,7 +64,7 @@ myOutfit();
 <section id='solution'>
 
 
-```js
+```python
 var outerWear = "T-Shirt";
 function myOutfit() {
   var outerWear = "sweater";

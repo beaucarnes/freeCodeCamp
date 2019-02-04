@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba963
 title: Shopping List
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -38,9 +38,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 var myList = [];
 
 
@@ -52,7 +52,7 @@ var myList = [];
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 var count = 0;
 var isArray = false;
 var hasString = false;
@@ -89,7 +89,7 @@ var hasNumber = false;
 <section id='solution'>
 
 
-```js
+```python
 var myList = [
   ["Candy", 10],
   ["Potatoes", 12],

@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba95f
 title: Manipulate Arrays With push()
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -31,9 +31,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourArray = ["Stimpson", "J", "cat"];
 ourArray.push(["happy", "joy"]);
@@ -53,7 +53,7 @@ var myArray = [["John", 23], ["cat", 2]];
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(z){return 'myArray = ' + JSON.stringify(z);})(myArray);
 ```
 
@@ -65,7 +65,7 @@ var myArray = [["John", 23], ["cat", 2]];
 <section id='solution'>
 
 
-```js
+```python
 var myArray = [["John", 23], ["cat", 2]];
 myArray.push(["dog",3]);
 ```

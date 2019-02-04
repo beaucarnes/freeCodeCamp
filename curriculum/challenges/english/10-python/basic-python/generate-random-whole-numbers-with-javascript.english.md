@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba94d
-title: Generate Random Whole Numbers with JavaScript
-challengeType: 1
+title: Generate Random Whole Numbers with Python
+challengeType: 9
 ---
 
 ## Description
@@ -40,9 +40,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
 
 function randomWholeNum() {
@@ -59,7 +59,7 @@ function randomWholeNum() {
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(){return randomWholeNum();})();
 ```
 
@@ -71,7 +71,7 @@ function randomWholeNum() {
 <section id='solution'>
 
 
-```js
+```python
 var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
 function randomWholeNum() {
   return Math.floor(Math.random() * 10);

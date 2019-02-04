@@ -1,7 +1,7 @@
 ---
 id: 5c54cdf6103ae886fa3ba91e
 title: Accessing Nested Arrays
-challengeType: 1
+challengeType: 9
 guideUrl: 'https://www.freecodecamp.org/guide/certificates/access-array-data-with-indexes'
 ---
 
@@ -34,9 +34,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 var myPlants = [
   {
@@ -69,7 +69,7 @@ var secondTree = ""; // Change this line
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(x) {
   if(typeof x != 'undefined') {
     return "secondTree = " + x;
@@ -86,7 +86,7 @@ var secondTree = ""; // Change this line
 <section id='solution'>
 
 
-```js
+```python
 var myPlants = [
   {
     type: "flowers",

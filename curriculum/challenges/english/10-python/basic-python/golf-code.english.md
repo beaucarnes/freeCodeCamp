@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba952
 title: Golf Code
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -52,9 +52,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
 function golfScore(par, strokes) {
   // Only change code below this line
@@ -78,7 +78,7 @@ golfScore(5, 4);
 <section id='solution'>
 
 
-```js
+```python
 function golfScore(par, strokes) {
   if (strokes === 1) {
     return "Hole-in-one!";

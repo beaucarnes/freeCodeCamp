@@ -1,12 +1,12 @@
 ---
 id: 5c55e842103ae886fa3ba948
 title: Escape Sequences in Strings
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
-Quotes are not the only characters that can be <dfn>escaped</dfn> inside a string. There are two reasons to use escaping characters: First is to allow you to use characters you might not otherwise be able to type out, such as a backspace. Second is to allow you to represent multiple quotes in a string without JavaScript misinterpreting what you mean. We learned this in the previous challenge.
+Quotes are not the only characters that can be <dfn>escaped</dfn> inside a string. There are two reasons to use escaping characters: First is to allow you to use characters you might not otherwise be able to type out, such as a backspace. Second is to allow you to represent multiple quotes in a string without Python misinterpreting what you mean. We learned this in the previous challenge.
 <table class="table table-striped"><thead><tr><th>Code</th><th>Output</th></tr></thead><tbody><tr><td><code>\'</code></td><td>single quote</td></tr><tr><td><code>\"</code></td><td>double quote</td></tr><tr><td><code>\\</code></td><td>backslash</td></tr><tr><td><code>\n</code></td><td>newline</td></tr><tr><td><code>\r</code></td><td>carriage return</td></tr><tr><td><code>\t</code></td><td>tab</td></tr><tr><td><code>\b</code></td><td>backspace</td></tr><tr><td><code>\f</code></td><td>form feed</td></tr></tbody></table>
 <em>Note that the backslash itself must be escaped in order to display as a backslash.</em>
 </section>
@@ -45,9 +45,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 var myStr; // Change this line
 
 
@@ -59,7 +59,7 @@ var myStr; // Change this line
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(){
 if (myStr !== undefined){
 console.log('myStr:\n' + myStr);}})();
@@ -73,7 +73,7 @@ console.log('myStr:\n' + myStr);}})();
 <section id='solution'>
 
 
-```js
+```python
 var myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
 ```
 

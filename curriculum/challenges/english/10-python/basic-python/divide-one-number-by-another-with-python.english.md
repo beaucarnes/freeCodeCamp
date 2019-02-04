@@ -1,16 +1,16 @@
 ---
 id: 5c55e842103ae886fa3ba947
-title: Divide One Number by Another with JavaScript
-challengeType: 1
+title: Divide One Number by Another with Python
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
 We can also divide one number by another.
-JavaScript uses the <code>/</code> symbol for division.
+Python uses the <code>/</code> symbol for division.
 
 <strong>Example</strong>
-<blockquote>myVar = 16 / 2; // assigned 8</blockquote>
+<blockquote>my_var = 16 / 2; // assigned 8</blockquote>
 
 </section>
 
@@ -36,9 +36,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 var quotient = 66 / 0;
 
 
@@ -50,7 +50,7 @@ var quotient = 66 / 0;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(z){return 'quotient = '+z;})(quotient);
 ```
 
@@ -62,7 +62,7 @@ var quotient = 66 / 0;
 <section id='solution'>
 
 
-```js
+```python
 var quotient = 66 / 33;
 ```
 

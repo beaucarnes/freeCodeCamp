@@ -1,7 +1,7 @@
 ---
 id: 5c54ce04103ae886fa3ba91f
 title: Accessing Object Properties with Bracket Notation
-challengeType: 1
+challengeType: 9
 guideUrl: 'https://www.freecodecamp.org/guide/certificates/accessing-objects-properties-with-bracket-notation'
 ---
 
@@ -42,9 +42,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 var testObj = {
   "an entree": "hamburger",
@@ -64,7 +64,7 @@ var drinkValue = testObj;    // Change this line
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(a,b) { return "entreeValue = '" + a + "', drinkValue = '" + b + "'"; })(entreeValue,drinkValue);
 ```
 
@@ -76,7 +76,7 @@ var drinkValue = testObj;    // Change this line
 <section id='solution'>
 
 
-```js
+```python
 var testObj = {
   "an entree": "hamburger",
   "my side": "veggies",

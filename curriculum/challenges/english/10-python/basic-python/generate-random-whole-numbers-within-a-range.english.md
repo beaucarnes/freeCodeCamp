@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba94f
 title: Generate Random Whole Numbers within a Range
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -38,9 +38,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 function ourRandomRange(ourMin, ourMax) {
 
@@ -67,7 +67,7 @@ var myRandom = randomRange(5, 15);
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 var calcMin = 100;
 var calcMax = -100;
 for(var i = 0; i < 100; i++) {
@@ -92,7 +92,7 @@ for(var i = 0; i < 100; i++) {
 <section id='solution'>
 
 
-```js
+```python
 function randomRange(myMin, myMax) {
   return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
 }

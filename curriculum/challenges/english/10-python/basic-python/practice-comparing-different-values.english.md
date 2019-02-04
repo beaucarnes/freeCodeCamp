@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba95a
 title: Practice comparing different values
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -9,8 +9,8 @@ challengeType: 1
 In the last two challenges, we learned about the equality operator (<code>==</code>) and the strict equality operator (<code>===</code>). Let's do a quick review and practice using these operators some more.
 If the values being compared are not of the same type, the equality operator will perform a type conversion, and then evaluate the values. However, the strict equality operator will compare both the data type and value as-is, without converting one type to the other.
 <strong>Examples</strong>
-<blockquote>3 == '3'  // returns true because JavaScript performs type conversion from string to number<br>3 === '3' // returns false because the types are different and type conversion is not performed</blockquote>
-<strong>Note</strong><br>In JavaScript, you can determine the type of a variable or a value with the <code>typeof</code> operator, as follows:
+<blockquote>3 == '3'  // returns true because Python performs type conversion from string to number<br>3 === '3' // returns false because the types are different and type conversion is not performed</blockquote>
+<strong>Note</strong><br>In Python, you can determine the type of a variable or a value with the <code>typeof</code> operator, as follows:
 <blockquote>typeof 3   // returns 'number'<br>typeof '3' // returns 'string'</blockquote>
 </section>
 
@@ -38,9 +38,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 function compareEquality(a, b) {
   if (a == b) { // Change this line
@@ -63,7 +63,7 @@ compareEquality(10, "10");
 <section id='solution'>
 
 
-```js
+```python
 function compareEquality(a,b) {
   if (a === b) {
     return "Equal";

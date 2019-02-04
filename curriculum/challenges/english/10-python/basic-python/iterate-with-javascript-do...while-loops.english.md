@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba959
-title: Iterate with JavaScript Do...While Loops
-challengeType: 1
+title: Iterate with Python Do...While Loops
+challengeType: 9
 ---
 
 ## Description
@@ -44,9 +44,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 var myArray = [];
 var i = 10;
@@ -66,7 +66,7 @@ while (i < 5) {
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 if(typeof myArray !== "undefined"){(function(){return myArray;})();}
 ```
 
@@ -78,7 +78,7 @@ if(typeof myArray !== "undefined"){(function(){return myArray;})();}
 <section id='solution'>
 
 
-```js
+```python
 var myArray = [];
 var i = 10;
 do {

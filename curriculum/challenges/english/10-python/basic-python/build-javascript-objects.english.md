@@ -1,7 +1,7 @@
 ---
 id: 5c54ce0f103ae886fa3ba928
-title: Build JavaScript Objects
-challengeType: 1
+title: Build Python Objects
+challengeType: 9
 ---
 
 ## Description
@@ -13,7 +13,7 @@ Here's a sample cat object:
 <blockquote>var cat = {<br>&nbsp;&nbsp;"name": "Whiskers",<br>&nbsp;&nbsp;"legs": 4,<br>&nbsp;&nbsp;"tails": 1,<br>&nbsp;&nbsp;"enemies": ["Water", "Dogs"]<br>};</blockquote>
 In this example, all the properties are stored as strings, such as - <code>"name"</code>, <code>"legs"</code>, and <code>"tails"</code>. However, you can also use numbers as properties. You can even omit the quotes for single-word string properties, as follows:
 <blockquote>var anotherObject = {<br>&nbsp;&nbsp;make: "Ford",<br>&nbsp;&nbsp;5: "five",<br>&nbsp;&nbsp;"model": "focus"<br>};</blockquote>
-However, if your object has any non-string properties, JavaScript will automatically typecast them as strings.
+However, if your object has any non-string properties, Python will automatically typecast them as strings.
 </section>
 
 ## Instructions
@@ -45,9 +45,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourDog = {
   "name": "Camper",
@@ -72,7 +72,7 @@ var myDog = {
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(z){return z;})(myDog);
 ```
 
@@ -84,7 +84,7 @@ var myDog = {
 <section id='solution'>
 
 
-```js
+```python
 var myDog = {
   "name": "Camper",
   "legs": 4,

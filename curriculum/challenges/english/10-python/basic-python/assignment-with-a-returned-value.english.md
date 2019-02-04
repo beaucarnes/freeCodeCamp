@@ -1,7 +1,7 @@
 ---
 id: 5c54ce0f103ae886fa3ba927
 title: Assignment with a Returned Value
-challengeType: 1
+challengeType: 9
 guideUrl: 'https://www.freecodecamp.org/guide/certificates/assignment-with-a-returned-value'
 ---
 
@@ -35,9 +35,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var changed = 0;
 
@@ -65,7 +65,7 @@ function processArg(num) {
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(){return "processed = " + processed})();
 ```
 
@@ -77,7 +77,7 @@ function processArg(num) {
 <section id='solution'>
 
 
-```js
+```python
 var processed = 0;
 
 function processArg(num) {

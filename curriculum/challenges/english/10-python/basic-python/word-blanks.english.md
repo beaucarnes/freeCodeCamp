@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba97a
 title: Word Blanks
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -38,9 +38,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
   // Your code below this line
   var result = "";
@@ -59,7 +59,7 @@ wordBlanks("dog", "big", "ran", "quickly");
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 var test1 = wordBlanks("dog", "big", "ran", "quickly");
 var test2 = wordBlanks("cat", "little", "hit", "slowly");
 ```
@@ -72,7 +72,7 @@ var test2 = wordBlanks("cat", "little", "hit", "slowly");
 <section id='solution'>
 
 
-```js
+```python
 function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
   var result = "";
 

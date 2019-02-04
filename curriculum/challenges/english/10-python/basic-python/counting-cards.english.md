@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba93f
 title: Counting Cards
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -46,9 +46,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 var count = 0;
 
 function cc(card) {
@@ -74,7 +74,7 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
 <section id='solution'>
 
 
-```js
+```python
 var count = 0;
 function cc(card) {
   switch(card) {

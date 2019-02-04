@@ -1,7 +1,7 @@
 ---
 id: 5c54ce0f103ae886fa3ba921
 title: Accessing Object Properties with Variables
-challengeType: 1
+challengeType: 9
 guideUrl: 'https://www.freecodecamp.org/guide/certificates/accessing-objects-properties-with-variables'
 ---
 
@@ -47,9 +47,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 var testObj = {
   12: "Namath",
@@ -69,7 +69,7 @@ var player = testObj;   // Change this Line
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 if(typeof player !== "undefined"){(function(v){return v;})(player);}
 ```
 
@@ -81,7 +81,7 @@ if(typeof player !== "undefined"){(function(v){return v;})(player);}
 <section id='solution'>
 
 
-```js
+```python
 var testObj = {
   12: "Namath",
   16: "Montana",

@@ -1,12 +1,12 @@
 ---
 id: 5c55e842103ae886fa3ba965
-title: Store Multiple Values in one Variable using JavaScript Arrays
-challengeType: 1
+title: Store Multiple Values in one Variable using Python Arrays
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
-With JavaScript <code>array</code> variables, we can store several pieces of data in one place.
+With Python <code>array</code> variables, we can store several pieces of data in one place.
 You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry, like this:
 <code>var sandwich = ["peanut butter", "jelly", "bread"]</code>.
 </section>
@@ -36,9 +36,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourArray = ["John", 23];
 
@@ -53,7 +53,7 @@ var myArray = [];
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(z){return z;})(myArray);
 ```
 
@@ -65,7 +65,7 @@ var myArray = [];
 <section id='solution'>
 
 
-```js
+```python
 var myArray = ["The Answer", 42];
 ```
 

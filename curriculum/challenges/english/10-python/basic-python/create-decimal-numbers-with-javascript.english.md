@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba940
-title: Create Decimal Numbers with JavaScript
-challengeType: 1
+title: Create Decimal Numbers with Python
+challengeType: 9
 ---
 
 ## Description
@@ -32,9 +32,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 var ourDecimal = 5.7;
 
 // Only change code below this line
@@ -48,7 +48,7 @@ var ourDecimal = 5.7;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(){if(typeof myDecimal !== "undefined"){return myDecimal;}})();
 ```
 
@@ -60,7 +60,7 @@ var ourDecimal = 5.7;
 <section id='solution'>
 
 
-```js
+```python
 var myDecimal = 9.9;
 ```
 

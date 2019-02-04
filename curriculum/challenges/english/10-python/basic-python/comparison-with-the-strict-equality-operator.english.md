@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba933
 title: Comparison with the Strict Equality Operator
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -39,9 +39,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 function testStrict(val) {
   if (val) { // Change this line
@@ -64,7 +64,7 @@ testStrict(10);
 <section id='solution'>
 
 
-```js
+```python
 function testStrict(val) {
   if (val === 7) {
     return "Equal";

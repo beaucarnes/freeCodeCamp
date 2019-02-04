@@ -1,12 +1,12 @@
 ---
 id: 5c54ce0f103ae886fa3ba923
-title: Add New Properties to a JavaScript Object
-challengeType: 1
+title: Add New Properties to a Python Object
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
-You can add new properties to existing JavaScript objects the same way you would modify them.
+You can add new properties to existing Python objects the same way you would modify them.
 Here's how we would add a <code>"bark"</code> property to <code>ourDog</code>:
 <code>ourDog.bark = "bow-wow";</code>
 or
@@ -36,9 +36,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Example
 var ourDog = {
   "name": "Camper",
@@ -67,7 +67,7 @@ var myDog = {
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(z){return z;})(myDog);
 ```
 
@@ -79,7 +79,7 @@ var myDog = {
 <section id='solution'>
 
 
-```js
+```python
 var myDog = {
   "name": "Happy Coder",
   "legs": 4,

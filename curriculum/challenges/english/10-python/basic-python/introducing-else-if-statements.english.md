@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba955
 title: Introducing Else If Statements
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -44,9 +44,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function testElseIf(val) {
   if (val > 10) {
     return "Greater than 10";
@@ -74,7 +74,7 @@ testElseIf(7);
 <section id='solution'>
 
 
-```js
+```python
 function testElseIf(val) {
   if(val > 10) {
     return "Greater than 10";

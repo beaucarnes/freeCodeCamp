@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba930
 title: Comparison with the Inequality Operator
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -41,9 +41,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 // Setup
 function testNotEqual(val) {
   if (val) { // Change this line
@@ -66,7 +66,7 @@ testNotEqual(10);
 <section id='solution'>
 
 
-```js
+```python
 function testNotEqual(val) {
   if (val != 99) {
     return "Not Equal";

@@ -1,15 +1,15 @@
 ---
 id: 5c55e842103ae886fa3ba939
 title: Compound Assignment With Augmented Multiplication
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
 The <code>*=</code> operator multiplies a variable by a number.
-<code>myVar = myVar * 5;</code>
-will multiply <code>myVar</code> by <code>5</code>. This can be rewritten as:
-<code>myVar *= 5;</code>
+<code>my_var = my_var * 5;</code>
+will multiply <code>my_var</code> by <code>5</code>. This can be rewritten as:
+<code>my_var *= 5;</code>
 </section>
 
 ## Instructions
@@ -40,9 +40,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 var a = 5;
 var b = 12;
 var c = 4.6;
@@ -62,7 +62,7 @@ c = c * 10;
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 (function(a,b,c){ return "a = " + a + ", b = " + b + ", c = " + c; })(a,b,c);
 ```
 
@@ -74,7 +74,7 @@ c = c * 10;
 <section id='solution'>
 
 
-```js
+```python
 var a = 5;
 var b = 12;
 var c = 4.6;

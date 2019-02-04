@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba974
 title: Use Multiple Conditional (Ternary) Operators
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -39,9 +39,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function checkSign(num) {
 
 }
@@ -58,7 +58,7 @@ checkSign(10);
 ## Solution
 <section id='solution'>
 
-```js
+```python
 function checkSign(num) {
   return (num > 0) ? 'positive' : (num < 0) ? 'negative' : 'zero';
 }

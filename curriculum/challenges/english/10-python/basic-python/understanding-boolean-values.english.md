@@ -1,13 +1,13 @@
 ---
 id: 5c55e842103ae886fa3ba96a
 title: Understanding Boolean Values
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
 <section id='description'>
 Another data type is the <dfn>Boolean</dfn>. <code>Booleans</code> may only be one of two values: <code>true</code> or <code>false</code>. They are basically little on-off switches, where <code>true</code> is "on" and <code>false</code> is "off."  These two states are mutually exclusive.
-<strong>Note</strong><br><code>Boolean</code> values are never written with quotes. The <code>strings</code> <code>"true"</code> and <code>"false"</code> are not <code>Boolean</code> and have no special meaning in JavaScript.
+<strong>Note</strong><br><code>Boolean</code> values are never written with quotes. The <code>strings</code> <code>"true"</code> and <code>"false"</code> are not <code>Boolean</code> and have no special meaning in Python.
 </section>
 
 ## Instructions
@@ -32,9 +32,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 function welcomeToBooleans() {
 
   // Only change code below this line.
@@ -51,7 +51,7 @@ function welcomeToBooleans() {
 ### After Test
 <div id='js-teardown'>
 
-```js
+```python
 welcomeToBooleans();
 ```
 
@@ -63,7 +63,7 @@ welcomeToBooleans();
 <section id='solution'>
 
 
-```js
+```python
 function welcomeToBooleans() {
   return true; // Change this line
 }

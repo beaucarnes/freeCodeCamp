@@ -1,7 +1,7 @@
 ---
 id: 5c55e842103ae886fa3ba95b
 title: Profile Lookup
-challengeType: 1
+challengeType: 9
 ---
 
 ## Description
@@ -44,9 +44,9 @@ tests:
 ## Challenge Seed
 <section id='challengeSeed'>
 
-<div id='js-seed'>
+<div id='py-seed'>
 
-```js
+```python
 //Setup
 var contacts = [
     {
@@ -71,7 +71,7 @@ var contacts = [
         "firstName": "Kristian",
         "lastName": "Vos",
         "number": "unknown",
-        "likes": ["JavaScript", "Gaming", "Foxes"]
+        "likes": ["Python", "Gaming", "Foxes"]
     }
 ];
 
@@ -96,7 +96,7 @@ lookUpProfile("Akira", "likes");
 <section id='solution'>
 
 
-```js
+```python
 var contacts = [
     {
         "firstName": "Akira",
@@ -120,7 +120,7 @@ var contacts = [
         "firstName": "Kristian",
         "lastName": "Vos",
         "number": "unknown",
-        "likes": ["JavaScript", "Gaming", "Foxes"]
+        "likes": ["Python", "Gaming", "Foxes"]
     },
 ];
 
