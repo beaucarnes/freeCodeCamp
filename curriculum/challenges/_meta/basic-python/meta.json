@@ -60,7 +60,14 @@
       "56533eb9ac21ba0edf2244ae",
       "Finding a Remainder in Python"
     ],
-
+    [ // Ethan starting from 'nest-one-array-within-another-array'
+      "5c55e842103ae886fa3ba957",
+      "Nest one Array within Another Array"
+    ],
+    [
+      "5c55e842103ae886fa3ba958",
+      "Nesting For Loops"
+    ]
   ],
   "helpRoom": "HelpPython",
   "fileName": "10-python/basic-python.json"

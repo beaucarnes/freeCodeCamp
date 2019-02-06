@@ -19,9 +19,12 @@ Create a nested array called <code>myArray</code>.
 
 ```yml
 tests:
-  - text: <code>myArray</code> should have at least one array nested within another array.
-    testString: assert(Array.isArray(myArray) && myArray.some(Array.isArray), '<code>myArray</code> should have at least one array nested within another array.');
-
+  - text: <code>myArray</code> should be an array
+    testString: isinstance(myArray, list)
+    type: code
+  - text: <code>myArray</code> first item should be an array
+    testString: isinstance(myArray[0], list)
+    type: code
 ```
 
 </section>
@@ -32,22 +35,12 @@ tests:
 <div id='py-seed'>
 
 ```python
-// Example
-var ourArray = [["the universe", 42], ["everything", 101010]];
+# Example
+ourArray = [["the universe", 42], ["everything", 101010]]
 
-// Only change code below this line.
-var myArray = [];
+# Only change code below this line.
+myArray = []
 
-```
-
-</div>
-
-
-### After Test
-<div id='js-teardown'>
-
-```python
-if(typeof myArray !== "undefined"){(function(){return myArray;})();}
 ```
 
 </div>
@@ -57,9 +50,8 @@ if(typeof myArray !== "undefined"){(function(){return myArray;})();}
 ## Solution
 <section id='solution'>
 
-
 ```python
-var myArray = [[1,2,3]];
+myArray = [[1,2,3]];
 ```
 
 </section>

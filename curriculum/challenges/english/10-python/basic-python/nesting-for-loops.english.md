@@ -7,8 +7,8 @@ challengeType: 9
 ## Description
 <section id='description'>
 If you have a multi-dimensional array, you can use the same logic as the prior waypoint to loop through both the array and any sub-arrays. Here is an example:
-<blockquote>var arr = [<br>&nbsp;&nbsp;[1,2], [3,4], [5,6]<br>];<br>for (var i=0; i &lt; arr.length; i++) {<br>&nbsp;&nbsp;for (var j=0; j &lt; arr[i].length; j++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(arr[i][j]);<br>&nbsp;&nbsp;}<br>}</blockquote>
-This outputs each sub-element in <code>arr</code> one at a time. Note that for the inner loop, we are checking the <code>.length</code> of <code>arr[i]</code>, since <code>arr[i]</code> is itself an array.
+<blockquote>arr = [<br>&nbsp;&nbsp;[1,2], [3,4], [5,6]<br>]<br>for i in arr:<br>&nbsp;&nbsp;for j in i:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(j)</blockquote>
+This outputs each sub-element in <code>arr</code> one at a time. Note that the first <code>for</code> loop returns the sub-array in the variable <code>i</code>. <code>j</code> is the contents of the sub-arrays.
 </section>
 
 ## Instructions
@@ -38,41 +38,36 @@ tests:
 <div id='py-seed'>
 
 ```python
-function multiplyAll(arr) {
-  var product = 1;
-  // Only change code below this line
+def multiplyAll(arr):
+  product = 1
+  # Only change code below this line
 
-  // Only change code above this line
-  return product;
-}
+  # Only change code above this line
+  return product
 
-// Modify values below to test your code
-multiplyAll([[1,2],[3,4],[5,6,7]]);
+# Modify values below to test your code
+multiplyAll([[1,2],[3,4],[5,6,7]])
 
 ```
 
 </div>
-
-
 
 </section>
 
 ## Solution
 <section id='solution'>
 
-
 ```python
-function multiplyAll(arr) {
-  var product = 1;
-  for (var i = 0; i < arr.length; i++) {
-    for (var j = 0; j < arr[i].length; j++) {
-      product *= arr[i][j];
-    }
-  }
-  return product;
-}
+def multiplyAll(arr):
+  product = 1
+  for i in arr:
+    for j in i:
+      product *= j
 
-multiplyAll([[1,2],[3,4],[5,6,7]]);
+  return product
+
+
+multiplyAll([[1,2],[3,4],[5,6,7]])
 ```
 
 </section>
