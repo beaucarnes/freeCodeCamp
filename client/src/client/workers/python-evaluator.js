@@ -42,8 +42,6 @@ self.onmessage = async e => {
       code = code + '\nprint(' + testString + ')';
     }
 
-    console.log(code)
-
     Sk.python3 = true;
     Sk.pre = 'output';
     Sk.configure({output: outf, read: builtinRead});
