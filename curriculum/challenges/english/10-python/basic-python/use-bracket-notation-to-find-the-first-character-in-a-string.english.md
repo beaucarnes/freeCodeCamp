@@ -8,13 +8,13 @@ challengeType: 9
 <section id='description'>
 <code>Bracket notation</code> is a way to get a character at a specific <code>index</code> within a string.
 Most modern programming languages, like Python, don't start counting at 1 like humans do. They start at 0. This is referred to as <dfn>Zero-based</dfn> indexing.
-For example, the character at index 0 in the word "Charles" is "C". So if <code>var firstName = "Charles"</code>, you can get the value of the first letter of the string by using <code>firstName[0]</code>.
+For example, the character at index 0 in the word "Charles" is "C". So if <code>first_name = "Charles"</code>, you can get the value of the first letter of the string by using <code>first_name[0]</code>.
 </section>
 
 ## Instructions
 <section id='instructions'>
-Use <dfn>bracket notation</dfn> to find the first character in the <code>lastName</code> variable and assign it to <code>firstLetterOfLastName</code>.
-<strong>Hint</strong><br>Try looking at the <code>firstLetterOfFirstName</code> variable declaration if you get stuck.
+Use <dfn>bracket notation</dfn> to find the first character in the <code>last_name</code> variable and assign it to <code>first_letter_of_last_name</code>.
+<strong>Hint</strong><br>Try looking at the <code>first_letter_of_first_name</code> variable declaration if you get stuck.
 </section>
 
 ## Tests
@@ -22,10 +22,12 @@ Use <dfn>bracket notation</dfn> to find the first character in the <code>lastNam
 
 ```yml
 tests:
-  - text: The <code>firstLetterOfLastName</code> variable should have the value of <code>L</code>.
-    testString: assert(firstLetterOfLastName === 'L', 'The <code>firstLetterOfLastName</code> variable should have the value of <code>L</code>.');
+  - text: The <code>first_letter_of_last_name</code> variable should have the value of <code>L</code>.
+    testString: first_letter_of_last_name == 'L'
+    type: code
   - text: You should use bracket notation.
-    testString: assert(code.match(/firstLetterOfLastName\s*?=\s*?lastName\[.*?\]/), 'You should use bracket notation.');
+    testString: input => input.contains("last_name[0]")
+    type: input
 
 ```
 
@@ -37,33 +39,24 @@ tests:
 <div id='py-seed'>
 
 ```python
-// Example
-var firstLetterOfFirstName = "";
-var firstName = "Ada";
+# Example
+first_letter_of_first_name = ""
+first_name = "Ada"
 
-firstLetterOfFirstName = firstName[0];
+first_letter_of_first_name = first_name[0]
 
-// Setup
-var firstLetterOfLastName = "";
-var lastName = "Lovelace";
+# Setup
+first_letter_of_last_name = ""
+last_name = "Lovelace"
 
-// Only change code below this line
-firstLetterOfLastName = lastName;
+# Only change code below this line
+first_letter_of_last_name = last_name
 
 
 ```
 
 </div>
 
-
-### After Test
-<div id='js-teardown'>
-
-```python
-(function(v){return v;})(firstLetterOfLastName);
-```
-
-</div>
 
 </section>
 
@@ -72,11 +65,11 @@ firstLetterOfLastName = lastName;
 
 
 ```python
-var firstLetterOfLastName = "";
-var lastName = "Lovelace";
+first_letter_of_last_name = ""
+last_name = "Lovelace"
 
-// Only change code below this line
-firstLetterOfLastName = lastName[0];
+# Only change code below this line
+first_letter_of_last_name = last_name[0]
 ```
 
 </section>

@@ -6,14 +6,14 @@ challengeType: 9
 
 ## Description
 <section id='description'>
-You can find the length of a <code>String</code> value by writing <code>.length</code> after the string variable or string literal.
-<code>"Alan Peter".length; // 10</code>
-For example, if we created a variable <code>var firstName = "Charles"</code>, we could find out how long the string <code>"Charles"</code> is by using the <code>firstName.length</code> property.
+You can find the length of a <code>string</code> value using the <code>len()</code> function. Just put the string inside the parentheses.
+<code>len("Alan Peter") # 10</code>
+For example, if we created a variable <code>first_name = "Charles"</code>, we could find the length of the string <code>"Charles"</code> with the code <code>len(first_name)</code>.
 </section>
 
 ## Instructions
 <section id='instructions'>
-Use the <code>.length</code> property to count the number of characters in the <code>lastName</code> variable and assign it to <code>lastNameLength</code>.
+Use the <code>len()</code> function to count the number of characters in the <code>last_name</code> variable and assign it to <code>last_name_length</code>.
 </section>
 
 ## Tests
@@ -21,10 +21,10 @@ Use the <code>.length</code> property to count the number of characters in the <
 
 ```yml
 tests:
-  - text: <code>lastNameLength</code> should be equal to eight.
-    testString: assert((function(){if(typeof lastNameLength !== "undefined" && typeof lastNameLength === "number" && lastNameLength === 8){return true;}else{return false;}})(), '<code>lastNameLength</code> should be equal to eight.');
-  - text: 'You should be getting the length of <code>lastName</code> by using <code>.length</code> like this: <code>lastName.length</code>.'
-    testString: 'assert((function(){if(code.match(/\.length/gi) && code.match(/\.length/gi).length >= 2 && code.match(/var lastNameLength \= 0;/gi) && code.match(/var lastNameLength \= 0;/gi).length >= 1){return true;}else{return false;}})(), ''You should be getting the length of <code>lastName</code> by using <code>.length</code> like this: <code>lastName.length</code>.'');'
+  - text: <code>last_name_length</code> should be equal to eight.
+    testString: last_name_length == 8
+  - text: 'You should be getting the length of <code>last_name</code> by using <code>len()</code> like this: <code>len(last_name)</code>.'
+    testString: input => input.contains(len(last_name))
 
 ```
 
@@ -36,49 +36,38 @@ tests:
 <div id='py-seed'>
 
 ```python
-// Example
-var firstNameLength = 0;
-var firstName = "Ada";
+# Example
+first_name_length = 0
+first_name = "Ada"
 
-firstNameLength = firstName.length;
+first_name_length = len(first_name)
 
-// Setup
-var lastNameLength = 0;
-var lastName = "Lovelace";
+# Setup
+last_name_length = 0
+last_name = "Lovelace"
 
-// Only change code below this line.
+# Only change code below this line.
 
-lastNameLength = lastName;
+last_name_length = last_name
 
 
 ```
 
 </div>
 
-
-### After Test
-<div id='js-teardown'>
-
-```python
-if(typeof lastNameLength !== "undefined"){(function(){return lastNameLength;})();}
-```
-
-</div>
-
-</section>
 
 ## Solution
 <section id='solution'>
 
 
 ```python
-var firstNameLength = 0;
-var firstName = "Ada";
-firstNameLength = firstName.length;
+first_name_length = 0
+first_name = "Ada"
+first_name_length = len(first_name)
 
-var lastNameLength = 0;
-var lastName = "Lovelace";
-lastNameLength = lastName.length;
+last_name_length = 0
+last_name = "Lovelace"
+last_name_length = len(last_name)
 ```
 
 </section>

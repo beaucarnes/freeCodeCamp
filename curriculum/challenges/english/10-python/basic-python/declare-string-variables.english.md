@@ -7,8 +7,8 @@ challengeType: 9
 ## Description
 <section id='description'>
 Previously we have used the code
-<code>var myName = "your name";</code>
-<code>"your name"</code> is called a <dfn>string</dfn> <dfn>literal</dfn>. It is a string because it is a series of zero or more characters enclosed in single or double quotes.
+<code>myName = "your name"</code>
+<code>"your name"</code> is called a <dfn>string literal</dfn>. It is a string because it is a series of zero or more characters enclosed in single or double quotes.
 </section>
 
 ## Instructions
@@ -22,9 +22,11 @@ Create two new <code>string</code> variables: <code>myFirstName</code> and <code
 ```yml
 tests:
   - text: <code>myFirstName</code> should be a string with at least one character in it.
-    testString: assert((function(){if(typeof myFirstName !== "undefined" && typeof myFirstName === "string" && myFirstName.length > 0){return true;}else{return false;}})(), '<code>myFirstName</code> should be a string with at least one character in it.');
+    testString: isinstance(myFirstName, basestring) && len(myFirstName) >= 1
+    type: code
   - text: <code>myLastName</code> should be a string with at least one character in it.
-    testString: assert((function(){if(typeof myLastName !== "undefined" && typeof myLastName === "string" && myLastName.length > 0){return true;}else{return false;}})(), '<code>myLastName</code> should be a string with at least one character in it.');
+    testString: isinstance(myLastName, basestring) && len(myLastName) >= 1
+    type: code
 
 ```
 
@@ -36,23 +38,13 @@ tests:
 <div id='py-seed'>
 
 ```python
-// Example
-var firstName = "Alan";
-var lastName = "Turing";
+# Example
+firstName = "Alan"
+lastName = "Turing"
 
-// Only change code below this line
-
-
-```
-
-</div>
+# Only change code below this line
 
 
-### After Test
-<div id='js-teardown'>
-
-```python
-if(typeof myFirstName !== "undefined" && typeof myLastName !== "undefined"){(function(){return myFirstName + ', ' + myLastName;})();}
 ```
 
 </div>
@@ -64,8 +56,8 @@ if(typeof myFirstName !== "undefined" && typeof myLastName !== "undefined"){(fun
 
 
 ```python
-var myFirstName = "Alan";
-var myLastName = "Turing";
+myFirstName = "Alan"
+myLastName = "Turing"
 ```
 
 </section>

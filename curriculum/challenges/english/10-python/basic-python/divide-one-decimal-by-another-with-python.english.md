@@ -20,12 +20,14 @@ Change the <code>0.0</code> so that <code>quotient</code> will equal to <code>2.
 ```yml
 tests:
   - text: The variable <code>quotient</code> should equal <code>2.2</code>
-    testString: assert(quotient === 2.2, 'The variable <code>quotient</code> should equal <code>2.2</code>');
+    testString: quotient == 2.2
+    type: code
   - text: You should use the <code>/</code> operator to divide 4.4 by 2
-    testString: assert(/4\.40*\s*\/\s*2\.*0*/.test(code), 'You should use the <code>/</code> operator to divide 4.4 by 2');
+    testString: input => /4\.40*\s*\/\s*2\.*0*/.test(input)
+    type: input
   - text: The quotient variable should only be assigned once
-    testString: assert(code.match(/quotient/g).length === 1, 'The quotient variable should only be assigned once');
-
+    testString: input => input.match(/quotient/g).length === 1
+    type: input
 ```
 
 </section>
@@ -36,19 +38,9 @@ tests:
 <div id='py-seed'>
 
 ```python
-var quotient = 0.0 / 2.0; // Fix this line
+quotient = 0.0 / 2.0; # Fix this line
 
 
-```
-
-</div>
-
-
-### After Test
-<div id='js-teardown'>
-
-```python
-(function(y){return 'quotient = '+y;})(quotient);
 ```
 
 </div>
@@ -59,6 +51,6 @@ var quotient = 0.0 / 2.0; // Fix this line
 <section id='solution'>
 
 ```python
-// solution required
+quotient = 4.4 / 2.0
 ```
 </section>

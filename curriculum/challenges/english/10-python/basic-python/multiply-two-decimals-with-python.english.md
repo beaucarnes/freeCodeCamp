@@ -20,11 +20,12 @@ Change the <code>0.0</code> so that product will equal <code>5.0</code>.
 
 ```yml
 tests:
-  - text: The variable <code>product</code> should equal <code>5.0</code>.
-    testString: assert(product === 5.0, 'The variable <code>product</code> should equal <code>5.0</code>.');
-  - text: You should use the <code>*</code> operator
-    testString: assert(/\*/.test(code), 'You should use the <code>*</code> operator');
-
+  - text: Make the variable <code>product</code> equal 5.0
+    testString: product == 5.0
+    type: code
+  - text: Use the <code>*</code> operator
+    testString: input => input.includes('*')
+    type: input
 ```
 
 </section>
@@ -35,19 +36,9 @@ tests:
 <div id='py-seed'>
 
 ```python
-var product = 2.0 * 0.0;
+product = 2.0 * 0.0
 
 
-```
-
-</div>
-
-
-### After Test
-<div id='js-teardown'>
-
-```python
-(function(y){return 'product = '+y;})(product);
 ```
 
 </div>
@@ -59,7 +50,7 @@ var product = 2.0 * 0.0;
 
 
 ```python
-var product = 2.0 * 2.5;
+product = 2.0 * 2.5
 ```
 
 </section>

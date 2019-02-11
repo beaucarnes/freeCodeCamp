@@ -7,9 +7,9 @@ challengeType: 9
 ## Description
 <section id='description'>
 The <code>/=</code> operator divides a variable by another number.
-<code>my_var = my_var / 5;</code>
+<code>my_var = my_var / 5</code>
 Will divide <code>my_var</code> by <code>5</code>. This can be rewritten as:
-<code>my_var /= 5;</code>
+<code>my_var /= 5</code>
 </section>
 
 ## Instructions
@@ -23,16 +23,17 @@ Convert the assignments for <code>a</code>, <code>b</code>, and <code>c</code> t
 ```yml
 tests:
   - text: <code>a</code> should equal <code>4</code>
-    testString: assert(a === 4, '<code>a</code> should equal <code>4</code>');
+    testString: a == 4
+    type: code
   - text: <code>b</code> should equal <code>27</code>
-    testString: assert(b === 27, '<code>b</code> should equal <code>27</code>');
+    testString: b == 27
+    type: code
   - text: <code>c</code> should equal <code>3</code>
-    testString: assert(c === 3, '<code>c</code> should equal <code>3</code>');
-  - text: You should use the <code>/=</code> operator for each variable
-    testString: assert(code.match(/\/=/g).length === 3, 'You should use the <code>/=</code> operator for each variable');
-  - text: Do not modify the code above the line
-    testString: assert(/var a = 48;/.test(code) && /var b = 108;/.test(code) && /var c = 33;/.test(code), 'Do not modify the code above the line');
-
+    testString: c == 3
+    type: code
+  - text: You should use the <code>-=</code> operator for each variable
+    testString: input => input.match(/\/=/g).length === 3
+    type: input
 ```
 
 </section>
@@ -43,26 +44,16 @@ tests:
 <div id='py-seed'>
 
 ```python
-var a = 48;
-var b = 108;
-var c = 33;
+var a = 48
+var b = 108
+var c = 33
 
-// Only modify code below this line
+# Only modify code below this line
 
-a = a / 12;
-b = b / 4;
-c = c / 11;
+a = a / 12
+b = b / 4
+c = c / 11
 
-```
-
-</div>
-
-
-### After Test
-<div id='js-teardown'>
-
-```python
-(function(a,b,c){ return "a = " + a + ", b = " + b + ", c = " + c; })(a,b,c);
 ```
 
 </div>
@@ -74,13 +65,13 @@ c = c / 11;
 
 
 ```python
-var a = 48;
-var b = 108;
-var c = 33;
+var a = 48
+var b = 108
+var c = 33
 
-a /= 12;
-b /= 4;
-c /= 11;
+a /= 12
+b /= 4
+c /= 11
 ```
 
 </section>
