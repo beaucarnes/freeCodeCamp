@@ -7,13 +7,13 @@ challengeType: 9
 ## Description
 <section id='description'>
 In order to get the last letter of a string, you can subtract one from the string's length.
-For example, if <code>var firstName = "Charles"</code>, you can get the value of the last letter of the string by using <code>firstName[firstName.length - 1]</code>.
+For example, if <code>first_name = "Charles"</code>, you can get the value of the last letter of the string by using <code>first_name[len(first_name) - 1]</code>.
 </section>
 
 ## Instructions
 <section id='instructions'>
-Use <dfn>bracket notation</dfn> to find the last character in the <code>lastName</code> variable.
-<strong>Hint</strong><br>Try looking at the <code>lastLetterOfFirstName</code> variable declaration if you get stuck.
+Use <dfn>bracket notation</dfn> to find the last character in the <code>last_name</code> variable.
+<strong>Hint</strong><br>Try looking at the <code>last_letter_of_first_name</code> variable declaration if you get stuck.
 </section>
 
 ## Tests
@@ -21,10 +21,12 @@ Use <dfn>bracket notation</dfn> to find the last character in the <code>lastName
 
 ```yml
 tests:
-  - text: <code>lastLetterOfLastName</code> should be "e".
-    testString: assert(lastLetterOfLastName === "e", '<code>lastLetterOfLastName</code> should be "e".');
-  - text: You have to use <code>.length</code> to get the last letter.
-    testString: assert(code.match(/\.length/g).length === 2, 'You have to use <code>.length</code> to get the last letter.');
+  - text: <code>last_letter_of_last_name</code> should be "e".
+    testString: last_letter_of_last_name == "e"
+    type: code
+  - text: You have to use <code>len()</code> to get the last letter.
+    testString: input => input.match(/len\(/g).length === 2
+    type: input
 
 ```
 
@@ -36,30 +38,21 @@ tests:
 <div id='py-seed'>
 
 ```python
-// Example
-var firstName = "Ada";
-var lastLetterOfFirstName = firstName[firstName.length - 1];
+# Example
+first_name = "Ada"
+last_letter_of_first_name = first_name[len(first_name) - 1]
 
-// Setup
-var lastName = "Lovelace";
+# Setup
+last_name = "Lovelace"
 
-// Only change code below this line.
-var lastLetterOfLastName = lastName;
+# Only change code below this line.
+last_letter_of_last_name = last_name
 
 
 ```
 
 </div>
 
-
-### After Test
-<div id='js-teardown'>
-
-```python
-(function(v){return v;})(lastLetterOfLastName);
-```
-
-</div>
 
 </section>
 
@@ -68,11 +61,11 @@ var lastLetterOfLastName = lastName;
 
 
 ```python
-var firstName = "Ada";
-var lastLetterOfFirstName = firstName[firstName.length - 1];
+first_name = "Ada"
+last_letter_of_first_name = first_name[len(first_name) - 1]
 
-var lastName = "Lovelace";
-var lastLetterOfLastName = lastName[lastName.length - 1];
+last_name = "Lovelace"
+last_letter_of_last_name = last_name[len(last_name) - 1]
 ```
 
 </section>

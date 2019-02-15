@@ -6,7 +6,7 @@ challengeType: 9
 
 ## Description
 <section id='description'>
-In Python, when the <code>+</code> operator is used with a <code>String</code> value, it is called the <dfn>concatenation</dfn> operator. You can build a new string out of other strings by <dfn>concatenating</dfn> them together.
+In Python, when the <code>+</code> operator is used between <code>String</code> values, it concatenates the strings together. You can build a new string out of other strings.
 <strong>Example</strong>
 <blockquote>'My name is Alan,' + ' I concatenate.'</blockquote>
 <strong>Note</strong><br>Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
@@ -14,7 +14,7 @@ In Python, when the <code>+</code> operator is used with a <code>String</code> v
 
 ## Instructions
 <section id='instructions'>
-Build <code>myStr</code> from the strings <code>"This is the start. "</code> and <code>"This is the end."</code> using the <code>+</code> operator.
+Build <code>my_str</code> from the strings <code>"This is the start. "</code> and <code>"This is the end."</code> using the <code>+</code> operator.
 </section>
 
 ## Tests
@@ -22,14 +22,12 @@ Build <code>myStr</code> from the strings <code>"This is the start. "</code> and
 
 ```yml
 tests:
-  - text: <code>myStr</code> should have a value of <code>This is the start. This is the end.</code>
-    testString: assert(myStr === "This is the start. This is the end.", '<code>myStr</code> should have a value of <code>This is the start. This is the end.</code>');
-  - text: Use the <code>+</code> operator to build <code>myStr</code>
-    testString: assert(code.match(/(["']).*(["'])\s*\+\s*(["']).*(["'])/g).length > 1, 'Use the <code>+</code> operator to build <code>myStr</code>');
-  - text: <code>myStr</code> should be created using the <code>var</code> keyword.
-    testString: assert(/var\s+myStr/.test(code), '<code>myStr</code> should be created using the <code>var</code> keyword.');
-  - text: Make sure to assign the result to the <code>myStr</code> variable.
-    testString: assert(/myStr\s*=/.test(code), 'Make sure to assign the result to the <code>myStr</code> variable.');
+  - text: <code>my_str</code> should have a value of <code>This is the start. This is the end.</code>
+    testString: my_str == "This is the start. This is the end."
+    type: code
+  - text: Use the <code>+</code> operator
+    testString: input => input.includes('+')
+    type: input
 
 ```
 
@@ -41,30 +39,14 @@ tests:
 <div id='py-seed'>
 
 ```python
-// Example
-var ourStr = "I come first. " + "I come second.";
+# Example
+our_str = "I come first. " + "I come second."
 
-// Only change code below this line
+# Only change code below this line
 
-var myStr;
-
-
-```
-
-</div>
+my_str = ""
 
 
-### After Test
-<div id='js-teardown'>
-
-```python
-(function(){
-  if(typeof myStr === 'string') {
-    return 'myStr = "' + myStr + '"';
-  } else {
-    return 'myStr is not a string';
-  }
-})();
 ```
 
 </div>
@@ -76,8 +58,8 @@ var myStr;
 
 
 ```python
-var ourStr = "I come first. " + "I come second.";
-var myStr = "This is the start. " + "This is the end.";
+ourStr = "I come first. " + "I come second."
+my_str = "This is the start. " + "This is the end."
 ```
 
 </section>

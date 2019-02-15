@@ -7,10 +7,10 @@ challengeType: 9
 ## Description
 <section id='description'>
 In programming, it is common to use assignments to modify the contents of a variable. Remember that everything to the right of the equals sign is evaluated first, so we can say:
-<code>my_var = my_var + 5;</code>
+<code>my_var = my_var + 5</code>
 to add <code>5</code> to <code>my_var</code>. Since this is such a common pattern, there are operators which do both a mathematical operation and assignment in one step.
 One such operator is the <code>+=</code> operator.
-<blockquote>var my_var = 1;<br>my_var += 5;<br>console.log(my_var); // Returns 6</blockquote>
+<blockquote>my_var = 1<br>my_var += 5<br>print(my_var) // Returns 6</blockquote>
 </section>
 
 ## Instructions
@@ -24,16 +24,17 @@ Convert the assignments for <code>a</code>, <code>b</code>, and <code>c</code> t
 ```yml
 tests:
   - text: <code>a</code> should equal <code>15</code>
-    testString: assert(a === 15, '<code>a</code> should equal <code>15</code>');
+    testString: a == 15
+    type: code
   - text: <code>b</code> should equal <code>26</code>
-    testString: assert(b === 26, '<code>b</code> should equal <code>26</code>');
+    testString: b == 26
+    type: code
   - text: <code>c</code> should equal <code>19</code>
-    testString: assert(c === 19, '<code>c</code> should equal <code>19</code>');
+    testString: c == 19
+    type: code
   - text: You should use the <code>+=</code> operator for each variable
-    testString: assert(code.match(/\+=/g).length === 3, 'You should use the <code>+=</code> operator for each variable');
-  - text: Do not modify the code above the line
-    testString: assert(/var a = 3;/.test(code) && /var b = 17;/.test(code) && /var c = 12;/.test(code), 'Do not modify the code above the line');
-
+    testString: input => input.match(/\+=/g).length === 3
+    type: input
 ```
 
 </section>
@@ -44,26 +45,16 @@ tests:
 <div id='py-seed'>
 
 ```python
-var a = 3;
-var b = 17;
-var c = 12;
+a = 3
+b = 17
+c = 12
 
-// Only modify code below this line
+# Only modify code below this line
 
-a = a + 12;
-b = 9 + b;
-c = c + 7;
+a = a + 12
+b = 9 + b
+c = c + 7
 
-```
-
-</div>
-
-
-### After Test
-<div id='js-teardown'>
-
-```python
-(function(a,b,c){ return "a = " + a + ", b = " + b + ", c = " + c; })(a,b,c);
 ```
 
 </div>
@@ -75,13 +66,13 @@ c = c + 7;
 
 
 ```python
-var a = 3;
-var b = 17;
-var c = 12;
+a = 3
+b = 17
+c = 12
 
-a += 12;
-b += 9;
-c += 7;
+a += 12
+b += 9
+c += 7
 ```
 
 </section>

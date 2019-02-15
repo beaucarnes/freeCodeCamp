@@ -37,15 +37,15 @@
       "Divide One Number by Another with Python"
     ],
     [
-      "56533eb9ac21ba0edf2244ac",
+      "5c55e842103ae886fa3ba953",
       "Increment a Number with Python"
     ],
     [
-      "56533eb9ac21ba0edf2244ad",
+      "5c55e842103ae886fa3ba942",
       "Decrement a Number with Python"
     ],
     [
-      "cf1391c1c11feddfaeb4bdef",
+      "5c55e842103ae886fa3ba940",
       "Create Decimal Numbers with Python"
     ],
     [
@@ -53,12 +53,92 @@
       "Multiply Two Decimals with Python"
     ],
     [
-      "bd7993c9ca9feddfaeb7bdef",
+      "5c55e842103ae886fa3ba946",
       "Divide One Decimal by Another with Python"
     ],
     [
-      "56533eb9ac21ba0edf2244ae",
+      "5c55e842103ae886fa3ba94b",
       "Finding a Remainder in Python"
+    ],
+    [
+      "5c55e842103ae886fa3ba937",
+      "Compound Assignment With Augmented Addition"
+    ],
+    [
+      "5c55e842103ae886fa3ba93a",
+      "Compound Assignment With Augmented Subtraction"
+    ],
+    [
+      "5c55e842103ae886fa3ba939",
+      "Compound Assignment With Augmented Multiplication"
+    ],
+    [
+      "5c55e842103ae886fa3ba938",
+      "Compound Assignment With Augmented Division"
+    ],
+    [
+      "5c55e842103ae886fa3ba941",
+      "Declare String Variables"
+    ],
+    [
+      "5c55e842103ae886fa3ba949",
+      "Escaping Literal Quotes in Strings"
+    ],
+    [
+      "5c55e842103ae886fa3ba95c",
+      "Quoting Strings with Single Quotes"
+    ],
+    [
+      "5c55e842103ae886fa3ba948",
+      "Escape Sequences in Strings"
+    ],
+    [
+      "5c55e842103ae886fa3ba93b",
+      "Concatenating Strings with Plus Operator"
+    ],
+    [
+      "5c55e842103ae886fa3ba93b",
+      "Concatenating Strings with the Plus Equals Operator"
+    ],
+    [
+      "5c55e842103ae886fa3ba93d",
+      "Constructing Strings with Variables"
+    ],
+    [
+      "5c54ce0f103ae886fa3ba926",
+      "Appending Variables to Strings"
+    ],
+    [
+      "5c55e842103ae886fa3ba94a",
+      "Find the Length of a String"
+    ],
+    [
+      "5c55e842103ae886fa3ba971",
+      "Use Bracket Notation to Find the First Character in a String"
+    ],
+    [
+      "5c55e842103ae886fa3ba969",
+      "Understand String Immutability"
+    ],
+    [
+      "5c55e842103ae886fa3ba970",
+      "Use Bracket Notation to Find the Nth Character in a String"
+    ],
+    [
+      "5c55e842103ae886fa3ba96f",
+      "Use Bracket Notation to Find the Last Character in a String"
+    ],
+    [
+      "5c55e842103ae886fa3ba972",
+      "Use Bracket Notation to Find the Nth-to-Last Character in a String"
+    ],
+    [
+      "5c55e842103ae886fa3ba97a",
+      "Word Blanks"
+    ],
+    [
+      "5c55e842103ae886fa3ba965",
+      "Store Multiple Values in one Variable using Python Arrays"
     ],
     [
       "5c55e842103ae886fa3ba957",

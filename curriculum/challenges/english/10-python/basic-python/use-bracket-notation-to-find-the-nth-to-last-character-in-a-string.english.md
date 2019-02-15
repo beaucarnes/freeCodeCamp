@@ -7,13 +7,13 @@ challengeType: 9
 ## Description
 <section id='description'>
 You can use the same principle we just used to retrieve the last character in a string to retrieve the Nth-to-last character.
-For example, you can get the value of the third-to-last letter of the <code>var firstName = "Charles"</code> string by using <code>firstName[firstName.length - 3]</code>
+For example, you can get the value of the third-to-last letter of the <code>first_name = "Charles"</code> string by using <code>first_name[len(first_name) - 3]</code>
 </section>
 
 ## Instructions
 <section id='instructions'>
-Use <dfn>bracket notation</dfn> to find the second-to-last character in the <code>lastName</code> string.
-<strong>Hint</strong><br>Try looking at the <code>thirdToLastLetterOfFirstName</code> variable declaration if you get stuck.
+Use <dfn>bracket notation</dfn> to find the second-to-last character in the <code>last_name</code> string.
+<strong>Hint</strong><br>Try looking at the <code>third_to_last_letter_of_first_name</code> variable declaration if you get stuck.
 </section>
 
 ## Tests
@@ -21,10 +21,12 @@ Use <dfn>bracket notation</dfn> to find the second-to-last character in the <cod
 
 ```yml
 tests:
-  - text: <code>secondToLastLetterOfLastName</code> should be "c".
-    testString: assert(secondToLastLetterOfLastName === 'c', '<code>secondToLastLetterOfLastName</code> should be "c".');
-  - text: You have to use <code>.length</code> to get the second last letter.
-    testString: assert(code.match(/\.length/g).length === 2, 'You have to use <code>.length</code> to get the second last letter.');
+  - text: <code>second_to_last_letter_of_last_name</code> should be "c".
+    testString: second_to_last_letter_of_last_name == 'c'
+    type: code
+  - text: You have to use <code>len()</code> to get the second last letter.
+    testString: input -> input.match(/len\(/g).length === 2
+    type: input
 
 ```
 
@@ -37,29 +39,20 @@ tests:
 
 ```python
 // Example
-var firstName = "Ada";
-var thirdToLastLetterOfFirstName = firstName[firstName.length - 3];
+first_name = "Ada"
+third_to_last_letter_of_first_name = first_name[len(first_name) - 3]
 
 // Setup
-var lastName = "Lovelace";
+last_name = "Lovelace"
 
 // Only change code below this line
-var secondToLastLetterOfLastName = lastName;
+second_to_last_letter_of_last_name = last_name
 
 
 ```
 
 </div>
 
-
-### After Test
-<div id='js-teardown'>
-
-```python
-(function(v){return v;})(secondToLastLetterOfLastName);
-```
-
-</div>
 
 </section>
 
@@ -68,11 +61,11 @@ var secondToLastLetterOfLastName = lastName;
 
 
 ```python
-var firstName = "Ada";
-var thirdToLastLetterOfFirstName = firstName[firstName.length - 3];
+first_name = "Ada"
+third_to_last_letter_of_first_name = first_name[len(first_name) - 3]
 
-var lastName = "Lovelace";
-var secondToLastLetterOfLastName = lastName[lastName.length - 2];
+last_name = "Lovelace"
+second_to_last_letter_of_last_name = last_name[len(last_name) - 2]
 ```
 
 </section>

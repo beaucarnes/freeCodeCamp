@@ -8,7 +8,7 @@ challengeType: 9
 <section id='description'>
 We have an array of objects representing different people in our contacts lists.
 A <code>lookUpProfile</code> function that takes <code>name</code> and a property (<code>prop</code>) as arguments has been pre-written for you.
-The function should check if <code>name</code> is an actual contact's <code>firstName</code> and the given property (<code>prop</code>) is a property of that contact.
+The function should check if <code>name</code> is an actual contact's <code>first_name</code> and the given property (<code>prop</code>) is a property of that contact.
 If both are true, then return the "value" of that property.
 If <code>name</code> does not correspond to any contacts then return <code>"No such contact"</code>
 If <code>prop</code> does not correspond to any valid properties of a contact found to match <code>name</code> then return <code>"No such property"</code>
@@ -24,8 +24,8 @@ If <code>prop</code> does not correspond to any valid properties of a contact fo
 
 ```yml
 tests:
-  - text: <code>"Kristian", "lastName"</code> should return <code>"Vos"</code>
-    testString: assert(lookUpProfile('Kristian','lastName') === "Vos", '<code>"Kristian", "lastName"</code> should return <code>"Vos"</code>');
+  - text: <code>"Kristian", "last_name"</code> should return <code>"Vos"</code>
+    testString: assert(lookUpProfile('Kristian','last_name') === "Vos", '<code>"Kristian", "last_name"</code> should return <code>"Vos"</code>');
   - text: <code>"Sherlock", "likes"</code> should return <code>["Intriguing Cases", "Violin"]</code>
     testString: assert.deepEqual(lookUpProfile("Sherlock", "likes"), ["Intriguing Cases", "Violin"], '<code>"Sherlock", "likes"</code> should return <code>["Intriguing Cases", "Violin"]</code>');
   - text: <code>"Harry","likes"</code> should return an array
@@ -50,26 +50,26 @@ tests:
 //Setup
 var contacts = [
     {
-        "firstName": "Akira",
-        "lastName": "Laine",
+        "first_name": "Akira",
+        "last_name": "Laine",
         "number": "0543236543",
         "likes": ["Pizza", "Coding", "Brownie Points"]
     },
     {
-        "firstName": "Harry",
-        "lastName": "Potter",
+        "first_name": "Harry",
+        "last_name": "Potter",
         "number": "0994372684",
         "likes": ["Hogwarts", "Magic", "Hagrid"]
     },
     {
-        "firstName": "Sherlock",
-        "lastName": "Holmes",
+        "first_name": "Sherlock",
+        "last_name": "Holmes",
         "number": "0487345643",
         "likes": ["Intriguing Cases", "Violin"]
     },
     {
-        "firstName": "Kristian",
-        "lastName": "Vos",
+        "first_name": "Kristian",
+        "last_name": "Vos",
         "number": "unknown",
         "likes": ["Python", "Gaming", "Foxes"]
     }
@@ -99,26 +99,26 @@ lookUpProfile("Akira", "likes");
 ```python
 var contacts = [
     {
-        "firstName": "Akira",
-        "lastName": "Laine",
+        "first_name": "Akira",
+        "last_name": "Laine",
         "number": "0543236543",
         "likes": ["Pizza", "Coding", "Brownie Points"]
     },
     {
-        "firstName": "Harry",
-        "lastName": "Potter",
+        "first_name": "Harry",
+        "last_name": "Potter",
         "number": "0994372684",
         "likes": ["Hogwarts", "Magic", "Hagrid"]
     },
     {
-        "firstName": "Sherlock",
-        "lastName": "Holmes",
+        "first_name": "Sherlock",
+        "last_name": "Holmes",
         "number": "0487345643",
         "likes": ["Intriguing Cases", "Violin"]
     },
     {
-        "firstName": "Kristian",
-        "lastName": "Vos",
+        "first_name": "Kristian",
+        "last_name": "Vos",
         "number": "unknown",
         "likes": ["Python", "Gaming", "Foxes"]
     },
@@ -128,7 +128,7 @@ var contacts = [
 //Write your function in between these comments
 function lookUpProfile(name, prop){
     for(var i in contacts){
-      if(contacts[i].firstName === name) {
+      if(contacts[i].first_name === name) {
         return contacts[i][prop] || "No such property";
       }
     }

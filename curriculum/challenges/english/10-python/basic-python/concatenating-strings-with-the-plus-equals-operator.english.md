@@ -12,7 +12,7 @@ We can also use the <code>+=</code> operator to <dfn>concatenate</dfn> a string 
 
 ## Instructions
 <section id='instructions'>
-Build <code>myStr</code> over several lines by concatenating these two strings: <code>"This is the first sentence. "</code> and <code>"This is the second sentence."</code> using the <code>+=</code> operator. Use the <code>+=</code> operator similar to how it is shown in the editor. Start by assigning the first string to <code>myStr</code>, then add on the second string.
+Build <code>my_str</code> over several lines by concatenating these two strings: <code>"This is the first sentence. "</code> and <code>"This is the second sentence."</code> using the <code>+=</code> operator. Use the <code>+=</code> operator similar to how it is shown in the editor. Start by assigning the first string to <code>my_str</code>, then add on the second string.
 </section>
 
 ## Tests
@@ -20,10 +20,12 @@ Build <code>myStr</code> over several lines by concatenating these two strings: 
 
 ```yml
 tests:
-  - text: <code>myStr</code> should have a value of <code>This is the first sentence. This is the second sentence.</code>
-    testString: assert(myStr === "This is the first sentence. This is the second sentence.", '<code>myStr</code> should have a value of <code>This is the first sentence. This is the second sentence.</code>');
-  - text: Use the <code>+=</code> operator to build <code>myStr</code>
-    testString: assert(code.match(/\w\s*\+=\s*["']/g).length > 1 && code.match(/\w\s*\=\s*["']/g).length > 1, 'Use the <code>+=</code> operator to build <code>myStr</code>');
+  - text: <code>my_str</code> should have a value of <code>This is the first sentence. This is the second sentence.</code>
+    testString: my_str == "This is the first sentence. This is the second sentence."
+    type: code
+  - text: Use the <code>+=</code> operator to build <code>my_str</code>
+    testString: input => input.includes('+=')
+    type: input
 
 ```
 
@@ -35,31 +37,14 @@ tests:
 <div id='py-seed'>
 
 ```python
-// Example
-var ourStr = "I come first. ";
-ourStr += "I come second.";
+# Example
+our_str = "I come first. "
+our_str += "I come second."
 
-// Only change code below this line
+# Only change code below this line
 
-var myStr;
+my_str = "";
 
-
-```
-
-</div>
-
-
-### After Test
-<div id='js-teardown'>
-
-```python
-(function(){
-  if(typeof myStr === 'string') {
-    return 'myStr = "' + myStr + '"';
-  } else {
-    return 'myStr is not a string';
-  }
-})();
 ```
 
 </div>
@@ -71,11 +56,11 @@ var myStr;
 
 
 ```python
-var ourStr = "I come first. ";
-ourStr += "I come second.";
+our_str = "I come first. "
+our_str += "I come second."
 
-var myStr = "This is the first sentence. ";
-myStr += "This is the second sentence.";
+my_str = "This is the first sentence. "
+my_str += "This is the second sentence."
 ```
 
 </section>

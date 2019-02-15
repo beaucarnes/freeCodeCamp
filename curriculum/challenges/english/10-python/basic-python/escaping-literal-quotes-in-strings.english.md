@@ -8,14 +8,14 @@ challengeType: 9
 <section id='description'>
 When you are defining a string you must start and end with a single or double quote. What happens when you need a literal quote: <code>"</code> or <code>'</code> inside of your string?
 In Python, you can <dfn>escape</dfn> a quote from considering it as an end of string quote by placing a <dfn>backslash</dfn> (<code>\</code>) in front of the quote.
-<code>var sampleStr = "Alan said, \"Peter is learning Python\".";</code>
+<code>sampleStr = "Alan said, \"Peter is learning Python\"."</code>
 This signals to Python that the following quote is not the end of the string, but should instead appear inside the string. So if you were to print this to the console, you would get:
 <code>Alan said, "Peter is learning Python".</code>
 </section>
 
 ## Instructions
 <section id='instructions'>
-Use <dfn>backslashes</dfn> to assign a string to the <code>myStr</code> variable so that if you were to print it to the console, you would see:
+Use <dfn>backslashes</dfn> to assign a string to the <code>my_str</code> variable so that if you were to print it to the console, you would see:
 <code>I am a "double quoted" string inside "double quotes".</code>
 </section>
 
@@ -25,9 +25,11 @@ Use <dfn>backslashes</dfn> to assign a string to the <code>myStr</code> variable
 ```yml
 tests:
   - text: You should use two double quotes (<code>&quot;</code>) and four escaped double quotes (<code>&#92;&quot;</code>).
-    testString: assert(code.match(/\\"/g).length === 4 && code.match(/[^\\]"/g).length === 2, 'You should use two double quotes (<code>&quot;</code>) and four escaped double quotes (<code>&#92;&quot;</code>).');
-  - text: 'Variable myStr should contain the string: <code>I am a "double quoted" string inside "double quotes".</code>'
-    testString: 'assert(myStr === "I am a \"double quoted\" string inside \"double quotes\".", ''Variable myStr should contain the string: <code>I am a "double quoted" string inside "double quotes".</code>'');'
+    testString: input => input.match(/\\"/g).length === 4 && input.match(/[^\\]"/g).length === 2
+    type: input
+  - text: 'Variable my_str should contain the string: <code>I am a "double quoted" string inside "double quotes".</code>'
+    testString: my_str == "I am a \"double quoted\" string inside \"double quotes\"."
+    type: code
 
 ```
 
@@ -39,25 +41,9 @@ tests:
 <div id='py-seed'>
 
 ```python
-var myStr = ""; // Change this line
+my_str = "" # Change this line
 
 
-```
-
-</div>
-
-
-### After Test
-<div id='js-teardown'>
-
-```python
-(function(){
-  if(typeof myStr === 'string') {
-    console.log("myStr = \"" + myStr + "\"");
-  } else {
-    console.log("myStr is undefined");
-  }
-})();
 ```
 
 </div>
@@ -69,7 +55,7 @@ var myStr = ""; // Change this line
 
 
 ```python
-var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+my_str = "I am a \"double quoted\" string inside \"double quotes\"."
 ```
 
 </section>

@@ -7,10 +7,10 @@ challengeType: 9
 ## Description
 <section id='description'>
 You can easily <dfn>decrement</dfn> or decrease a variable by one with the <code>--</code> operator.
-<code>i--;</code>
+<code>i--</code>
 is the equivalent of
-<code>i = i - 1;</code>
-<strong>Note</strong><br>The entire line becomes <code>i--;</code>, eliminating the need for the equal sign.
+<code>i = i - 1</code>
+<strong>Note</strong><br>The entire line becomes <code>i--</code>, eliminating the need for the equal sign.
 </section>
 
 ## Instructions
@@ -24,14 +24,13 @@ Change the code to use the <code>--</code> operator on <code>my_var</code>.
 ```yml
 tests:
   - text: <code>my_var</code> should equal <code>10</code>
-    testString: assert(my_var === 10, '<code>my_var</code> should equal <code>10</code>');
-  - text: <code>my_var = my_var - 1;</code> should be changed
-    testString: assert(/var\s*my_var\s*=\s*11;\s*\/*.*\s*([-]{2}\s*my_var|my_var\s*[-]{2});/.test(code), '<code>my_var = my_var - 1;</code> should be changed');
-  - text: Use the <code>--</code> operator on <code>my_var</code>
-    testString: assert(/[-]{2}\s*my_var|my_var\s*[-]{2}/.test(code), 'Use the <code>--</code> operator on <code>my_var</code>');
-  - text: Do not change code above the line
-    testString: assert(/var my_var = 11;/.test(code), 'Do not change code above the line');
-
+    testString: my_var == 10
+    type: code
+  - text: <code>my_var = my_var - 1</code> should be changed
+    testString: input => !input.includes('my_var = my_var - 1')
+  - text: Use the <code>--</code> operator
+    testString: input => input.includes('my_var--')
+    type: input
 ```
 
 </section>
@@ -42,21 +41,11 @@ tests:
 <div id='py-seed'>
 
 ```python
-var my_var = 11;
+var my_var = 11
 
-// Only change code below this line
-my_var = my_var - 1;
+# Only change code below this line
+my_var = my_var - 1
 
-```
-
-</div>
-
-
-### After Test
-<div id='js-teardown'>
-
-```python
-(function(z){return 'my_var = ' + z;})(my_var);
 ```
 
 </div>
@@ -68,8 +57,8 @@ my_var = my_var - 1;
 
 
 ```python
-var my_var = 11;
-my_var--;
+var my_var = 11
+my_var--
 ```
 
 </section>

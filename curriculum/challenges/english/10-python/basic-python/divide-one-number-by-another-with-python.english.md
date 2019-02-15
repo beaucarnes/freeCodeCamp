@@ -10,7 +10,7 @@ We can also divide one number by another.
 Python uses the <code>/</code> symbol for division.
 
 <strong>Example</strong>
-<blockquote>my_var = 16 / 2; // assigned 8</blockquote>
+<blockquote>my_var = 16 / 2; # assigned 8</blockquote>
 
 </section>
 
@@ -25,10 +25,11 @@ Change the <code>0</code> so that the <code>quotient</code> is equal to <code>2<
 ```yml
 tests:
   - text: Make the variable <code>quotient</code> equal to 2.
-    testString: assert(quotient === 2, 'Make the variable <code>quotient</code> equal to 2.');
+    testString: quotient == 2
+    type: code
   - text: Use the <code>/</code> operator
-    testString: assert(/\d+\s*\/\s*\d+/.test(code), 'Use the <code>/</code> operator');
-
+    testString: input => input.includes('/')
+    type: input
 ```
 
 </section>
@@ -39,19 +40,8 @@ tests:
 <div id='py-seed'>
 
 ```python
-var quotient = 66 / 0;
+quotient = 66 / 0;
 
-
-```
-
-</div>
-
-
-### After Test
-<div id='js-teardown'>
-
-```python
-(function(z){return 'quotient = '+z;})(quotient);
 ```
 
 </div>
@@ -63,7 +53,7 @@ var quotient = 66 / 0;
 
 
 ```python
-var quotient = 66 / 33;
+quotient = 66 / 33;
 ```
 
 </section>
