@@ -59,6 +59,30 @@
     [
       "56533eb9ac21ba0edf2244ae",
       "Finding a Remainder in Python"
+    ],
+    [
+      "5c55e842103ae886fa3ba957",
+      "Nest one List within Another List"
+    ],
+    [
+      "5c54c9af103ae886fa3ba91c",
+      "Access List Data with Indexes"
+    ],
+    [
+      "5c55e842103ae886fa3ba953",
+      "Modify List Data With Indexes"
+    ],
+    [
+      "5c54cde7103ae886fa3ba91d",
+      "Access Multi-Dimensional Lists With Indexes"
+    ],
+    [
+      "5c55e842103ae886fa3ba95f",
+      "Manipulate Lists With append()"
+    ],
+    [
+      "5c55e842103ae886fa3ba95e",
+      "Manipulate Lists With pop()"
     ]
   ],
   "helpRoom": "HelpPython",
