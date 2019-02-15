@@ -6,16 +6,16 @@ challengeType: 9
 
 ## Description
 <section id='description'>
-In Python, <code>String</code> values are <dfn>immutable</dfn>, which means that they cannot be altered once created.
+In Python, <code>string</code> values are <dfn>immutable</dfn>, which means that they cannot be altered once created.
 For example, the following code:
-<blockquote>var myStr = "Bob";<br>myStr[0] = "J";</blockquote>
-cannot change the value of <code>myStr</code> to "Job", because the contents of <code>myStr</code> cannot be altered. Note that this does <em>not</em> mean that <code>myStr</code> cannot be changed, just that the individual characters of a <dfn>string literal</dfn> cannot be changed. The only way to change <code>myStr</code> would be to assign it with a new string, like this:
-<blockquote>var myStr = "Bob";<br>myStr = "Job";</blockquote>
+<blockquote>my_str = "Bob"<br>my_str[0] = "J"</blockquote>
+cannot change the value of <code>my_str</code> to "Job", because the contents of <code>my_str</code> cannot be altered. Note that this does <em>not</em> mean that <code>my_str</code> cannot be changed, just that the individual characters of a <dfn>string literal</dfn> cannot be changed. The only way to change <code>my_str</code> would be to assign it with a new string, like this:
+<blockquote>my_str = "Bob"<br>my_str = "Job"</blockquote>
 </section>
 
 ## Instructions
 <section id='instructions'>
-Correct the assignment to <code>myStr</code> so it contains the string value of <code>Hello World</code> using the approach shown in the example above.
+Correct the assignment to <code>my_str</code> so it contains the string value of <code>Hello World</code> using the approach shown in the example above.
 </section>
 
 ## Tests
@@ -23,10 +23,12 @@ Correct the assignment to <code>myStr</code> so it contains the string value of 
 
 ```yml
 tests:
-  - text: <code>myStr</code> should have a value of <code>Hello World</code>
-    testString: assert(myStr === "Hello World", '<code>myStr</code> should have a value of <code>Hello World</code>');
+  - text: <code>my_str</code> should have a value of <code>Hello World</code>
+    testString: my_str == "Hello World"
+    type: code
   - text: Do not change the code above the line
-    testString: assert(/myStr = "Jello World"/.test(code), 'Do not change the code above the line');
+    testString: input => input.contains('my_str = "Jello World"')
+    type: input
 
 ```
 
@@ -38,27 +40,18 @@ tests:
 <div id='py-seed'>
 
 ```python
-// Setup
-var myStr = "Jello World";
+# Setup
+my_str = "Jello World"
 
-// Only change code below this line
+# Only change code below this line
 
-myStr[0] = "H"; // Fix Me
+my_str[0] = "H" # Fix Me
 
 
 ```
 
 </div>
 
-
-### After Test
-<div id='js-teardown'>
-
-```python
-(function(v){return "myStr = " + v;})(myStr);
-```
-
-</div>
 
 </section>
 
@@ -67,8 +60,8 @@ myStr[0] = "H"; // Fix Me
 
 
 ```python
-var myStr = "Jello World";
-myStr = "Hello World";
+my_str = "Jello World"
+my_str = "Hello World"
 ```
 
 </section>

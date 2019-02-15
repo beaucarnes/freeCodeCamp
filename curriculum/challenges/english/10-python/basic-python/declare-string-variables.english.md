@@ -13,7 +13,7 @@ Previously we have used the code
 
 ## Instructions
 <section id='instructions'>
-Create two new <code>string</code> variables: <code>myFirstName</code> and <code>myLastName</code> and assign them the values of your first and last name, respectively.
+Create two new <code>string</code> variables: <code>my_first_name</code> and <code>my_last_name</code> and assign them the values of your first and last name, respectively.
 </section>
 
 ## Tests
@@ -21,11 +21,11 @@ Create two new <code>string</code> variables: <code>myFirstName</code> and <code
 
 ```yml
 tests:
-  - text: <code>myFirstName</code> should be a string with at least one character in it.
-    testString: isinstance(myFirstName, basestring) && len(myFirstName) >= 1
+  - text: <code>my_first_name</code> should be a string with at least one character in it.
+    testString: isinstance(my_first_name, basestring) && len(my_first_name) >= 1
     type: code
-  - text: <code>myLastName</code> should be a string with at least one character in it.
-    testString: isinstance(myLastName, basestring) && len(myLastName) >= 1
+  - text: <code>my_last_name</code> should be a string with at least one character in it.
+    testString: isinstance(my_last_name, basestring) && len(my_last_name) >= 1
     type: code
 
 ```
@@ -39,8 +39,8 @@ tests:
 
 ```python
 # Example
-firstName = "Alan"
-lastName = "Turing"
+first_name = "Alan"
+last_name = "Turing"
 
 # Only change code below this line
 
@@ -56,8 +56,8 @@ lastName = "Turing"
 
 
 ```python
-myFirstName = "Alan"
-myLastName = "Turing"
+my_first_name = "Alan"
+my_last_name = "Turing"
 ```
 
 </section>

@@ -117,29 +117,29 @@
       "Use Bracket Notation to Find the First Character in a String"
     ],
     [
-      "56533eb9ac21ba0edf2244ba",
+      "5c55e842103ae886fa3ba969",
       "Understand String Immutability"
     ],
     [
-      "bd7123c9c450eddfaeb5bdef",
+      "5c55e842103ae886fa3ba970",
       "Use Bracket Notation to Find the Nth Character in a String"
     ],
     [
-      "bd7123c9c451eddfaeb5bdef",
+      "5c55e842103ae886fa3ba96f",
       "Use Bracket Notation to Find the Last Character in a String"
     ],
     [
-      "bd7123c9c452eddfaeb5bdef",
+      "5c55e842103ae886fa3ba972",
       "Use Bracket Notation to Find the Nth-to-Last Character in a String"
     ],
     [
-      "56533eb9ac21ba0edf2244bb",
+      "5c55e842103ae886fa3ba97a",
       "Word Blanks"
     ],
     [
-      "bd7993c9c69feddfaeb8bdef",
+      "5c55e842103ae886fa3ba965",
       "Store Multiple Values in one Variable using Python Arrays"
-    ],
+    ]
   ],
   "helpRoom": "HelpPython",
   "fileName": "10-python/basic-python.json"
