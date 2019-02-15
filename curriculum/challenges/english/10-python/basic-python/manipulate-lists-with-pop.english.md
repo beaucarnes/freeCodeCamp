@@ -6,15 +6,13 @@ challengeType: 9
 
 ## Description
 <section id='description'>
-Another way to change the data in a list is with the <code>.pop()</code> function.
-<code>.pop()</code> is used to "pop" a value off of the end of a list. We can store this "popped off" value by assigning it to a variable. In other words, <code>.pop()</code> removes the last element from a list and returns that element.
-Any type of entry can be "popped" off of a list - numbers, strings, even nested lists.
-<blockquote><code>threeList = [1, 4, 6]<br>oneDown = threeList.pop()<br>print(oneDown) # Returns 6<br> print(threeList) # Returns [1, 4]</code></blockquote>
+Another way to change the data in a list is with the <code>.pop()</code> function. The <code>.pop(i)</code> function will "pop" an item from a list at the given index and return it. By default (no <code>i</code> specified), <code>.pop()</code> removes the last item from the list and returns it. Any type of entry can be "popped" off of a list - numbers, strings, even nested lists.
+<blockquote><code>tfourList = [1, 4, 6, 10]<br>theEnd = threeList.pop()<br>theSecond = threeList.pop(1)<br>print(theEnd) # Returns 10<br>print(theSecond) # Returns 4<br>print(threeList) # Returns [1, 6]</code></blockquote>
 </section>
 
 ## Instructions
 <section id='instructions'>
-Use the <code>.pop()</code> function to remove the last item from <code>myList</code>, assigning the "popped off" value to <code>removedFromMyList</code>.
+Use the <code>.pop()</code> function to remove the first and last item from <code>myList</code>, assigning the "popped off" values to <code>firstFromMyList</code> and <code>lastFromMyList</code> respectively.
 </section>
 
 ## Tests
@@ -22,12 +20,15 @@ Use the <code>.pop()</code> function to remove the last item from <code>myList</
 
 ```yml
 tests:
-  - text: <code>myArray</code> should only contain <code>[["John", 23]]</code>.
-    testString: assert((function(d){if(d[0][0] == 'John' && d[0][1] === 23 && d[1] == undefined){return true;}else{return false;}})(myArray), '<code>myArray</code> should only contain <code>[["John", 23]]</code>.');
-  - text: Use <code>pop()</code> on <code>myArray</code>
-    testString: assert(/removedFromMyArray\s*=\s*myArray\s*.\s*pop\s*(\s*)/.test(code), 'Use <code>pop()</code> on <code>myArray</code>');
-  - text: <code>removedFromMyArray</code> should only contain <code>["cat", 2]</code>.
-    testString: assert((function(d){if(d[0] == 'cat' && d[1] === 2 && d[2] == undefined){return true;}else{return false;}})(removedFromMyArray), '<code>removedFromMyArray</code> should only contain <code>["cat", 2]</code>.');
+  - text: <code>myArray</code> should only contain <code>123</code>.
+    testString: myArray == [ 123 ]
+    type: code
+  - text: <code>firstFromMyArray</code> should be 99
+    testString: firstFromMyArray == 99
+    type: code
+  - text: <code>lastFromMyArray</code> should be 777
+    testString: lastFromMyArray == 777
+    type: code
 
 ```
 
@@ -45,10 +46,11 @@ removedFromOurList = ourList.pop()
 # removedFromOurList now equals 3, and ourList now equals [1,2]
 
 # Setup
-myList = [["John", 23], ["cat", 2]]
+myList = [99, 123, 777]
 
 # Only change code below this line.
-removedFromMyList
+firstFromMyList
+lastFromMyList
 
 ```
 
@@ -61,8 +63,12 @@ removedFromMyList
 
 
 ```python
-myList = [["John", 23], ["cat", 2]]
-removedFromMyList = myList.pop()
+# Setup
+myList = [99, 123, 777]
+
+# Only change code below this line.
+firstFromMyList = myList.pop(0)
+lastFromMyList = myList.pop()
 ```
 
 </section>
