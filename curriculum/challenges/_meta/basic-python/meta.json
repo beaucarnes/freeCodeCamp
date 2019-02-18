@@ -163,6 +163,14 @@
     [
       "5c55e842103ae886fa3ba95e",
       "Manipulate Lists With pop()"
+    ],
+    [
+      "5c55e842103ae886fa3ba961",
+      "Manipulate Lists With insert()"
+    ],
+    [
+      "5c55e842103ae886fa3ba963",
+      "Shopping List"
     ]
   ],
   "helpRoom": "HelpPython",
