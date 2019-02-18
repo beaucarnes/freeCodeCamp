@@ -171,6 +171,22 @@
     [
       "5c55e842103ae886fa3ba963",
       "Shopping List"
+    ],
+    [
+      "5c55e842103ae886fa3ba97b",
+      "Write Reusable Python with Functions"
+    ],
+    [
+      "5c55e842103ae886fa3ba959",
+      "Passing Values to Functions with Arguments"
+    ],
+    [
+      "5c55e842103ae886fa3ba950",
+      "Global Scope and Functions"
+    ],
+    [
+      "5c55e842103ae886fa3ba95c",
+      "Local Scope and Functions"
     ]
   ],
   "helpRoom": "HelpPython",

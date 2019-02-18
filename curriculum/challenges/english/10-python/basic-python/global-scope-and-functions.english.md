@@ -6,14 +6,44 @@ challengeType: 9
 
 ## Description
 <section id='description'>
-In Python, <dfn>scope</dfn> refers to the visibility of variables. Variables which are defined outside of a function block have <dfn>Global</dfn> scope. This means, they can be seen everywhere in your Python code.
-Variables which are used without the <code>var</code> keyword are automatically created in the <code>global</code> scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with <code>var</code>.
+In Python, <dfn>scope</dfn> refers to the visibility of variables. Variables defined outside of a function are considerd <strong>global</strong> scoped variables. Handling global variables is tricky in python. Take a look at the following code block:
+<blockquote>
+def f():
+  print(s)
+
+s = "FreeCodeCamp"
+f()
+print(s)
+</blockquote>
+This code block will print the string "FreeCodeCamp" to the console twice without error because the reference to s within f() is never reassigned. Now if we change the code block to:
+<blockquote>
+def f():
+  print(s)
+  s = "CampCodeFree"
+  print(s)
+
+s = "FreeCodeCamp"
+f()
+print(s)
+</blockquote>
+This will result in an error: <code>Line 2: local variable 's' referenced before assignment</code>. This error is thrown because of how Python handles something called <strong>local</strong> scope which we will learn about in the next challenge. To fix the second code block we need to use the <code>global</code> keyword.
+<blockquote>
+def f():
+  global s
+  print(s)
+  s = "CampCodeFree"
+  print(s)
+
+s = "FreeCodeCamp"
+f()
+print(s)
+</blockquote>
+Now this code block will result in the string <code>"CampCodeFree"</code> being printed twice because the <code>s</code> variable within <code>f()</code> is referencing the global scope <code>s</code> variable.
 </section>
 
 ## Instructions
 <section id='instructions'>
-Using <code>var</code>, declare a <code>global</code> variable <code>myGlobal</code> outside of any function. Initialize it with a value of <code>10</code>.
-Inside function <code>fun1</code>, assign <code>5</code> to <code>oopsGlobal</code> <strong><em>without</em></strong> using the <code>var</code> keyword.
+Declare a variable called <code>myGlobal</code> outside of any function. Initialize it with a value of <code>10</code>. Inside a function <code>f</code>, properly modify the <code>myGlobal</code> variable from within the function. Assign the value <code>5</code> to it.
 </section>
 
 ## Tests
@@ -22,14 +52,14 @@ Inside function <code>fun1</code>, assign <code>5</code> to <code>oopsGlobal</co
 ```yml
 tests:
   - text: <code>myGlobal</code> should be defined
-    testString: assert(typeof myGlobal != "undefined", '<code>myGlobal</code> should be defined');
-  - text: <code>myGlobal</code> should have a value of <code>10</code>
-    testString: assert(myGlobal === 10, '<code>myGlobal</code> should have a value of <code>10</code>');
-  - text: <code>myGlobal</code> should be declared using the <code>var</code> keyword
-    testString: assert(/var\s+myGlobal/.test(code), '<code>myGlobal</code> should be declared using the <code>var</code> keyword');
-  - text: <code>oopsGlobal</code> should be a global variable and have a value of <code>5</code>
-    testString: assert(typeof oopsGlobal != "undefined" && oopsGlobal === 5, '<code>oopsGlobal</code> should be a global variable and have a value of <code>5</code>');
-
+    testString: myGlobal in globals()
+    type: code
+  - text: <code>myGlobal</code> should be initialized with the value <code>10</code>
+    testString: output => output.includes('Initial 10')
+    type: console
+  - text: <code>myGlobal</code> should be modified to the value <code>5</code>
+    testString: output => output.includes('After 5')
+    type: console
 ```
 
 </section>
@@ -40,65 +70,17 @@ tests:
 <div id='py-seed'>
 
 ```python
-// Declare your variable here
+# Declare your myGlobal variable here
 
 
-function fun1() {
-  // Assign 5 to oopsGlobal Here
+def f():
+  # Reference and modify myGlobal within this function
 
-}
 
-// Only change code above this line
-function fun2() {
-  var output = "";
-  if (typeof myGlobal != "undefined") {
-    output += "myGlobal: " + myGlobal;
-  }
-  if (typeof oopsGlobal != "undefined") {
-    output += " oopsGlobal: " + oopsGlobal;
-  }
-  console.log(output);
-}
-```
-
-</div>
-
-### Before Test
-<div id='js-setup'>
-
-```python
-var logOutput = "";
-var originalConsole = console
-function capture() {
-    var nativeLog = console.log;
-    console.log = function (message) {
-        logOutput = message;
-        if(nativeLog.apply) {
-          nativeLog.apply(originalConsole, arguments);
-        } else {
-          var nativeMsg = Array.prototype.slice.apply(arguments).join(' ');
-          nativeLog(nativeMsg);
-        }
-    };
-}
-
-function uncapture() {
-  console.log = originalConsole.log;
-}
-var oopsGlobal;
-capture();
-```
-
-</div>
-
-### After Test
-<div id='js-teardown'>
-
-```python
-fun1();
-fun2();
-uncapture();
-(function() { return logOutput || "console.log never called"; })();
+# Only change code above this line
+print('Initial ' + myGlobal)
+f()
+print('After ' + myGlobal)
 ```
 
 </div>
@@ -110,25 +92,18 @@ uncapture();
 
 
 ```python
-// Declare your variable here
-var myGlobal = 10;
+# Declare your myGlobal variable here
+myGlobal = 10
 
-function fun1() {
-  // Assign 5 to oopsGlobal Here
-  oopsGlobal = 5;
-}
+def f():
+  # Reference and modify myGlobal within this function
+  global myGlobal
+  myGlobal = 5
 
-// Only change code above this line
-function fun2() {
-  var output = "";
-  if(typeof myGlobal != "undefined") {
-    output += "myGlobal: " + myGlobal;
-  }
-  if(typeof oopsGlobal != "undefined") {
-    output += " oopsGlobal: " + oopsGlobal;
-  }
-  console.log(output);
-}
+# Only change code above this line
+print('Initial ' + myGlobal)
+f()
+print('After ' + myGlobal)
 ```
 
 </section>

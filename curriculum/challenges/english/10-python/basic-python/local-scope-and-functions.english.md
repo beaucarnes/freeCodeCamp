@@ -6,16 +6,34 @@ challengeType: 9
 
 ## Description
 <section id='description'>
-Variables which are declared within a function, as well as the function parameters have <dfn>local</dfn> scope. That means, they are only visible within that function.
-Here is a function <code>myTest</code> with a local variable called <code>loc</code>.
-<blockquote>function myTest() {<br>&nbsp;&nbsp;var loc = "foo";<br>&nbsp;&nbsp;console.log(loc);<br>}<br>myTest(); // logs "foo"<br>console.log(loc); // loc is not defined</blockquote>
-<code>loc</code> is not defined outside of the function.
+In the previous challenge we showed you a code block:
+<blockquote>
+def f():
+  print(s)
+  s = "CampCodeFree"
+  print(s)
+
+s = "FreeCodeCamp"
+f()
+print(s)
+</blockquote>
+This code block throws an error because the print method on line 2 is trying to reference a variable before it is assigned locally (line 3). The reassignment of variable <code>s</code> within the function <code>f</code> is a demonstration of Python's local variable scoping. Variables defined within functions are limited to that function's <strong>local</strong> scope. Other functions and the global process do not have access to those variables. Local variables do not overwrite global variables that share a similar name unless you use the <code>global</code> keyword shown off in the previous challenge. For example:
+<blockquote>
+def f():
+  a = "Kale Salad, Yum!"
+  print(a)
+
+a = "Hello, World!"
+f()
+print(a)
+</blockquote>
+Will result in <code>"Kale Salad, Yum!"</code> being printed first and <code>"Hello, World!"</code> being printed second.
+
 </section>
 
 ## Instructions
 <section id='instructions'>
-Declare a local variable <code>my_var</code> inside <code>myLocalScope</code>. Run the tests and then follow the instructions commented out in the editor.
-<strong>Hint</strong><br>Refreshing the page may help if you get stuck.
+Practice using local variables; within the function <code>f</code> assign the value 99 to the variable <code>a</code>. Do not delete any other lines of code
 </section>
 
 ## Tests
@@ -23,11 +41,12 @@ Declare a local variable <code>my_var</code> inside <code>myLocalScope</code>. R
 
 ```yml
 tests:
-  - text: No global <code>my_var</code> variable
-    testString: assert(typeof my_var === 'undefined', 'No global <code>my_var</code> variable');
-  - text: Add a local <code>my_var</code> variable
-    testString: assert(/var\s+my_var/.test(code), 'Add a local <code>my_var</code> variable');
-
+  - text: Program should ouput 'Local 99'
+    testString: output => output.includes('Local 99')
+    type: console
+  - text: Program should output 'Global 0'
+    testString: output => output.includes('Global 0')
+    type: console
 ```
 
 </section>
@@ -38,56 +57,13 @@ tests:
 <div id='py-seed'>
 
 ```python
-function myLocalScope() {
-  'use strict'; // you shouldn't need to edit this line
+def f():
+  # assign value here
+  print('Local ' + a)
 
-  console.log(my_var);
-}
-myLocalScope();
-
-// Run and check the console
-// my_var is not defined outside of myLocalScope
-console.log(my_var);
-
-// Now remove the console log line to pass the test
-
-```
-
-</div>
-
-### Before Test
-<div id='js-setup'>
-
-```python
-var logOutput = "";
-var originalConsole = console
-function capture() {
-  var nativeLog = console.log;
-  console.log = function (message) {
-    logOutput = message;
-    if(nativeLog.apply) {
-      nativeLog.apply(originalConsole, arguments);
-    } else {
-      var nativeMsg = Array.prototype.slice.apply(arguments).join(' ');
-      nativeLog(nativeMsg);
-    }
-  };
-}
-
-function uncapture() {
-  console.log = originalConsole.log;
-}
-
-```
-
-</div>
-
-### After Test
-<div id='js-teardown'>
-
-```python
-typeof myLocalScope === 'function' && (capture(), myLocalScope(), uncapture());
-(function() { return logOutput || "console.log never called"; })();
+a = 0
+print('Global ' + a)
+f()
 ```
 
 </div>
@@ -99,13 +75,13 @@ typeof myLocalScope === 'function' && (capture(), myLocalScope(), uncapture());
 
 
 ```python
-function myLocalScope() {
-  'use strict';
+def f():
+  a = 99
+  print('Local ' + a)
 
-  var my_var;
-  console.log(my_var);
-}
-myLocalScope();
+a = 0
+print('Global ' + a)
+f()
 ```
 
 </section>

@@ -16,7 +16,7 @@ We have passed two arguments, <code>"Hello"</code> and <code>"World"</code>. Ins
 
 ## Instructions
 <section id='instructions'>
-<ol><li>Create a function called <code>functionWithArgs</code> that accepts two arguments and outputs their sum to the dev console.</li><li>Call the function with two numbers as arguments.</li></ol>
+Create a function called <code>functionWithArgs</code> that accepts two arguments and outputs their sum to the dev console.
 </section>
 
 ## Tests
@@ -31,9 +31,8 @@ tests:
     testString: output => output.includes('3')
     type: console
   - text: <code>functionWithArgs(7,9)</code> should output <code>16</code>
-    testString: if(typeof functionWithArgs === "function") { capture(); functionWithArgs(7,9); uncapture(); } assert(logOutput == 16, '<code>functionWithArgs(7,9)</code> should output <code>16</code>');
-  - text: Call <code>functionWithArgs</code> with two numbers after you define it.
-    testString: assert(/^\s*functionWithArgs\s*\(\s*\d+\s*,\s*\d+\s*\)\s*;/m.test(code), 'Call <code>functionWithArgs</code> with two numbers after you define it.');
+    testString: output => output.includes('16')
+    type: console
 
 ```
 
@@ -53,50 +52,9 @@ ourFunctionWithArgs(10, 5) # Outputs 5
 
 # Only change code below this line.
 
-
-```
-
-</div>
-
-### Before Test
-<div id='js-setup'>
-
-```python
-var logOutput = "";
-var originalConsole = console
-function capture() {
-    var nativeLog = console.log;
-    console.log = function (message) {
-        if(message) logOutput = JSON.stringify(message).trim();
-        if(nativeLog.apply) {
-          nativeLog.apply(originalConsole, arguments);
-        } else {
-          var nativeMsg = Array.prototype.slice.apply(arguments).join(' ');
-          nativeLog(nativeMsg);
-        }
-    };
-}
-
-function uncapture() {
-  console.log = originalConsole.log;
-}
-
-capture();
-```
-
-</div>
-
-### After Test
-<div id='js-teardown'>
-
-```python
-uncapture();
-
-if (typeof functionWithArgs !== "function") { 
-  (function() { return "functionWithArgs is not defined"; })();
-} else {
-  (function() { return logOutput || "console.log never called"; })();
-}
+# Only change code above this line.
+functionWithArgs(1, 2)
+functionWithArgs(7, 9)
 ```
 
 </div>
@@ -111,7 +69,8 @@ if (typeof functionWithArgs !== "function") {
 def functionWithArgs(a, b):
   print(a + b)
 
-functionWithArgs(10, 5)
+functionWithArgs(1, 2)
+functionWithArgs(7, 9)
 ```
 
 </section>
