@@ -8,7 +8,7 @@ challengeType: 9
 <section id='description'>
 We can pass values into a function with <dfn>arguments</dfn>. You can use a <code>return</code> statement to send a value back out of a function.
 <strong>Example</strong>
-<blockquote>function plusThree(num) {<br>&nbsp;&nbsp;return num + 3;<br>}<br>var answer = plusThree(5); // 8</blockquote>
+<blockquote>def plusThree(num):<br>&nbsp;&nbsp;return num + 3<br><br>answer = plusThree(5) # 8</blockquote>
 <code>plusThree</code> takes an <dfn>argument</dfn> for <code>num</code> and returns a value equal to <code>num + 3</code>.
 </section>
 
@@ -23,13 +23,17 @@ Create a function <code>timesFive</code> that accepts one argument, multiplies i
 ```yml
 tests:
   - text: <code>timesFive</code> should be a function
-    testString: assert(typeof timesFive === 'function', '<code>timesFive</code> should be a function');
+    testString: callable(timesFive)
+    type: code
   - text: <code>timesFive(5)</code> should return <code>25</code>
-    testString: assert(timesFive(5) === 25, '<code>timesFive(5)</code> should return <code>25</code>');
+    testString: timesFive(5) == 25
+    type: code
   - text: <code>timesFive(2)</code> should return <code>10</code>
-    testString: assert(timesFive(2) === 10, '<code>timesFive(2)</code> should return <code>10</code>');
+    testString: timesFive(2) == 10
+    type: code
   - text: <code>timesFive(0)</code> should return <code>0</code>
-    testString: assert(timesFive(0) === 0, '<code>timesFive(0)</code> should return <code>0</code>');
+    testString: timesFive(0) == 0
+    type: code
 
 ```
 
@@ -41,21 +45,19 @@ tests:
 <div id='py-seed'>
 
 ```python
-// Example
-function minusSeven(num) {
-  return num - 7;
-}
-
-// Only change code below this line
+# Example
+def minusSeven(num):
+  return num - 7
 
 
+# Only change code below this line
 
-console.log(minusSeven(10));
+
+
+print(minusSeven(10))
 ```
 
 </div>
-
-
 
 </section>
 
@@ -64,10 +66,10 @@ console.log(minusSeven(10));
 
 
 ```python
-function timesFive(num) {
-  return num * 5;
-}
-timesFive(10);
+def timesFive(num):
+  return num * 5
+
+timesFive(10)
 ```
 
 </section>

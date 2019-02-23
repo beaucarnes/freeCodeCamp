@@ -187,6 +187,22 @@
     [
       "5c55e842103ae886fa3ba95c",
       "Local Scope and Functions"
+    ],
+    [
+      "5c55e842103ae886fa3ba95f",
+      "Return a Value from a Function with Return"
+    ],
+    [
+      "5c55e842103ae886fa3ba96c",
+      "Understanding Undefined Value returned from a Function"
+    ],
+    [
+      "5c54ce0f103ae886fa3ba927",
+      "Assignment with a Returned Value"
+    ],
+    [
+      "5c55e842103ae886fa3ba964",
+      "Stand in Line"
     ]
   ],
   "helpRoom": "HelpPython",
