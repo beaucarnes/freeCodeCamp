@@ -1,5 +1,7 @@
 import frameRunnerData from '../../../../../config/client/frame-runner.json';
 import testEvaluatorData from '../../../../../config/client/test-evaluator.json';
+import pyTestEvaluatorData from '../../../../config/pyodide-runner.json';
+
 import { challengeTypes } from '../../../../utils/challenge-types';
 import {
   ChallengeFile as PropTypesChallengeFile,
@@ -43,6 +45,7 @@ interface BuildOptions {
 
 const { filename: runner } = frameRunnerData;
 const { filename: testEvaluator } = testEvaluatorData;
+const { filename: pyTestEvaluator } = pyTestEvaluatorData;
 
 const frameRunner = [
   {
@@ -104,7 +107,8 @@ const buildFunctions = {
   [challengeTypes.backend]: buildBackendChallenge,
   [challengeTypes.backEndProject]: buildBackendChallenge,
   [challengeTypes.pythonProject]: buildBackendChallenge,
-  [challengeTypes.multifileCertProject]: buildDOMChallenge
+  [challengeTypes.multifileCertProject]: buildDOMChallenge,
+  [challengeTypes.pyodide]: buildPyodideChallenge
 };
 
 export function canBuildChallenge(challengeData: BuildChallengeData): boolean {
@@ -174,6 +178,18 @@ function getJSTestRunner(
 
     result.on('LOG', proxyLogger);
     return result.done;
+  };
+}
+
+function getPyodideTestRunner({ build, sources }: BuildChallengeData, proxyLogger: TestRunnerConfig) {
+  const code = sources && 'index' in sources ? sources['index'] : '';
+
+  const testWorker = createWorker(pyTestEvaluator, { terminateWorker: true });
+  console.log('create pyodide worker');
+  return (testString: string, testTimeout: number, firstTest = true) => {
+    return testWorker
+      .execute({ build, testString, code, sources, firstTest }, testTimeout)
+      .on('LOG', proxyLogger).done;
   };
 }
 
@@ -259,6 +275,25 @@ export function buildJSChallenge(
       }));
   }
 }
+
+export function buildPyodideChallenge({ challengeFiles }: { challengeFiles: ChallengeFiles }, options: BuildOptions) {
+  const pipeLine = composeFunctions(...getTransformers(options));
+
+  const finalFiles = challengeFiles?.map(pipeLine);
+  return Promise.all(finalFiles)
+    .then(checkFilesErrors)
+    .then(challengeFiles => ({
+      challengeType: challengeTypes.pyodide,
+      build: challengeFiles
+        .reduce(
+          (body, challengeFiles) => [...body, challengeFiles.head, challengeFiles.contents, challengeFiles.tail],
+          [] as string[]
+        )
+        .join('\n'),
+      sources: buildSourceMap(challengeFiles)
+    }));
+}
+
 
 function buildBackendChallenge({ url }: BuildChallengeData) {
   return {
