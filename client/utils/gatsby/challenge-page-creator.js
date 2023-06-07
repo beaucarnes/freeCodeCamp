@@ -11,6 +11,10 @@ const classic = path.resolve(
   __dirname,
   '../../src/templates/Challenges/classic/show.tsx'
 );
+const classicterminal = path.resolve(
+  __dirname,
+  '../../src/templates/Challenges/classic-terminal/show.tsx'
+);
 const frontend = path.resolve(
   __dirname,
   '../../src/templates/Challenges/projects/frontend/show.tsx'
@@ -45,6 +49,7 @@ const exam = path.resolve(
 const views = {
   backend,
   classic,
+  classicterminal,
   modern: classic,
   frontend,
   video,

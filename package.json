@@ -99,7 +99,8 @@
   "dependencies": {
     "dotenv": "16.0.3",
     "invariant": "2.2.4",
-    "pm2": "^5.2.2"
+    "pm2": "^5.2.2",
+    "xterm-for-react": "^1.0.4"
   },
   "devDependencies": {
     "@babel/plugin-proposal-function-bind": "7.18.9",
@@ -115,8 +116,8 @@
     "@types/node": "18.16.0",
     "@types/store": "2.0.2",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "babel-jest": "29.5.0",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "29.5.0",
     "babel-plugin-transform-imports": "2.0.0",
     "cross-env": "7.0.3",
     "cypress": "11.2.0",
